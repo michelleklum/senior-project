@@ -1,66 +1,68 @@
 import "./Terminal.css";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import { useDispatch } from "react-redux";
 import { COMPUTER } from "../../slices/pageStates";
 import { changePage } from "../../slices/pageSlice";
 
+import InitialOutput from "./InitialOutput";
+
 function Terminal() {
-  const [userInput, setUserInput] = useState("");
-  const [olderTerminalOutput, setOlderTerminalOutput] = useState("");
-  // TODO: Fix animation on initial terminal output.
-  const initialTerminalOutput =
-    'Initializing OS...\n\nLast login: Wed Dec 28 19:34:48 on ttys000\n\nType "help" to see a list of available commands.\nEager to dive in? Type "init" to enter.\n'; // TODO
-  const [lastTerminalOutput, setLastTerminalOutput] = useState(
-    initialTerminalOutput
-  );
+  const [input, setInput] = useState("");
+  const [olderOutput, setOlderOutput] = useState("");
+  const [lastOutput, setLastOutput] = useState("");
+  const [isLastOutputPresent, setIsLastOutputPresent] = useState(false);
   const dispatch = useDispatch();
 
-  // As soon as the Terminal component renders, focus on the input element.
-  const userInputRef = useRef();
-  useEffect(() => {
-    userInputRef.current.focus();
-  }, []);
+  const inputRef = useRef();
 
-  function handleUserInput() {
-    // Include past terminal output (olderTerminalOutput), as well as what the user just typed (userInput), and new terminal output (lastTerminalOutput).
-    let newTerminalOutput = `guest@michelles-senior-project ~ % ${userInput}\n`;
-    switch (userInput) {
+  // Event handler for when user presses Enter key in the input box.
+  function handleInput() {
+    // Include what the user just typed in the new terminal output (lastOutput).
+    let newOutput = `guest@michelles-senior-project ~ % ${input}\n`;
+    switch (input) {
       case "init":
         dispatch(changePage(COMPUTER));
         break;
       case "help":
-        newTerminalOutput +=
-          "Available commands:\ninit\n\n[init] enter website.\n";
+        newOutput += "Available commands:\ninit\n\n[init] enter website.\n";
         break;
       default:
-        newTerminalOutput += `zsh: command not found: ${userInput}\n`;
+        newOutput += `zsh: command not found: ${input}\n`;
     }
-    setOlderTerminalOutput(`${olderTerminalOutput}\n${lastTerminalOutput}`);
-    setLastTerminalOutput(newTerminalOutput);
-    setUserInput(""); // Clear user input state.
+    setOlderOutput(olderOutput ? `${olderOutput}\n${lastOutput}` : lastOutput); // Preserve history of all commands input, and all output returned.
+    setLastOutput(newOutput);
+    setIsLastOutputPresent(true);
+    setInput(""); // Clear terminal input state.
   }
 
   return (
-    <div id="terminal" onClick={() => userInputRef.current.focus()}>
-      <h1>COMPUTER WORLD [TODO: MAKE THIS ASCII ART]</h1>
-      <p id="older-terminal-output">{olderTerminalOutput}</p>
-      <p id="last-terminal-output">{lastTerminalOutput}</p>
-      <div className="terminal-prompt">
+    <div id="terminal" onClick={() => inputRef.current.focus()}>
+      <h1 id="terminal-title-glow">
+        COMPUTER WORLD [TODO: MAKE THIS ASCII ART]
+      </h1>
+      <InitialOutput
+        isLastOutputPresent={isLastOutputPresent}
+        inputRef={inputRef}
+      />
+      <p id="older-terminal-output">{olderOutput}</p>
+      <p>{lastOutput}</p>
+      <div id="terminal-prompt">
         <p>
           <span id="prompt-user">guest</span>
           <span id="prompt-at">@</span>
           <span id="prompt-domain">michelles-senior-project</span> ~ %
         </p>
         <input
-          ref={userInputRef}
+          ref={inputRef}
           type="text"
           id="terminal-input"
           name="terminal-input"
           aria-label="Terminal input"
-          value={userInput}
-          onChange={(e) => setUserInput(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleUserInput()}
+          autoComplete="off"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleInput()}
         />
       </div>
     </div>

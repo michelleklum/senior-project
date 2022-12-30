@@ -12,56 +12,22 @@ body {
   white-space: pre-line; /* Allows use of \n for line breaks. */
 }
 
+#terminal-title-glow {
+  color: var(--blue-text-color);
+  text-shadow: 0 0 4px var(--blue-text-color);
+}
+
+#gray-initial-terminal-output {
+  color: var(--gray-text-color);
+}
+
 #older-terminal-output {
   color: var(--gray-text-color);
 }
 
-/* TODO: Fix animation. */
-/* Typewriter effect for initial terminal output. */
-#last-terminal-output {
-  overflow: hidden;
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms infinite;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: hsl(0, 0%, 80%);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-.terminal-prompt {
+#terminal-prompt {
   font-weight: bold;
   display: flex;
-}
-
-#terminal-input {
-  /* Remove default input styling. */
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  color: --main-text-color;
-
-  /* Additional styling. */
-  margin-left: 1rem;
-  flex-grow: 1;
-  font-size: 1rem;
-  font-family: Menlo, "Hack", monospace;
-  caret-color: var(--blue-text-color);
 }
 
 #prompt-user {
@@ -74,4 +40,21 @@ body {
 
 #prompt-domain {
   color: var(--blue-text-color);
+}
+
+#terminal-input {
+  /* Remove default input styling. */
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: var(--main-text-color);
+
+  /* Additional styling. */
+  margin-left: 1rem;
+  flex-grow: 1;
+  font-size: 1rem;
+  font-family: Menlo, "Hack", monospace;
+  caret-color: var(--blue-text-color);
 }
