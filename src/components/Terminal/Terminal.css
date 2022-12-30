@@ -2,8 +2,8 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
 
 body {
-  background-color: #282c34;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
 }
 
 #terminal {
@@ -13,7 +13,7 @@ body {
 }
 
 #older-terminal-output {
-  color: #adadad;
+  color: var(--gray-text-color);
 }
 
 /* TODO: Fix animation. */
@@ -54,24 +54,24 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  color: white;
+  color: --main-text-color;
 
   /* Additional styling. */
   margin-left: 1rem;
   flex-grow: 1;
   font-size: 1rem;
   font-family: Menlo, "Hack", monospace;
-  caret-color: #61dafb;
+  caret-color: var(--blue-text-color);
 }
 
 #prompt-user {
-  color: #f79256;
+  color: var(--orange-text-color);
 }
 
 #prompt-at {
-  color: #adadad;
+  color: var(--gray-text-color);
 }
 
 #prompt-domain {
-  color: #61dafb;
+  color: var(--blue-text-color);
 }

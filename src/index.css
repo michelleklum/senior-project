@@ -1,6 +1,15 @@
 /* Import for the font Hack. */
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
 
+/* Define custom properties for colors. */
+:root {
+  --bg-color: #282c34;
+  --main-text-color: white;
+  --gray-text-color: #adadad;
+  --orange-text-color: #f79256;
+  --blue-text-color: #61dafb;
+}
+
 html {
   /* Set font-size of root element in order to use rem for other elements and make those relative to the root font-size. */
   font-size: 16px;
