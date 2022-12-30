@@ -12,7 +12,8 @@ body {
   white-space: pre-line; /* Allows use of \n for line breaks. */
 }
 
-#terminal-title-glow {
+#terminal-title {
+  font-size: 4rem;
   color: var(--blue-text-color);
   text-shadow: 0 0 4px var(--blue-text-color);
 }

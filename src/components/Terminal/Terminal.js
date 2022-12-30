@@ -6,17 +6,19 @@ import { COMPUTER } from "../../slices/pageStates";
 import { changePage } from "../../slices/pageSlice";
 
 import InitialOutput from "./InitialOutput";
+import Prompt from "./Prompt";
 
 function Terminal() {
+  const inputRef = useRef();
+
   const [input, setInput] = useState("");
   const [olderOutput, setOlderOutput] = useState("");
   const [lastOutput, setLastOutput] = useState("");
   const [isLastOutputPresent, setIsLastOutputPresent] = useState(false);
+
   const dispatch = useDispatch();
 
-  const inputRef = useRef();
-
-  // Event handler for when user presses Enter key in the input box.
+  // Event handler for when user presses Enter key in the terminal prompt's input box.
   function handleInput() {
     // Include what the user just typed in the new terminal output (lastOutput).
     let newOutput = `guest@michelles-senior-project ~ % ${input}\n`;
@@ -38,33 +40,19 @@ function Terminal() {
 
   return (
     <div id="terminal" onClick={() => inputRef.current.focus()}>
-      <h1 id="terminal-title-glow">
-        COMPUTER WORLD [TODO: MAKE THIS ASCII ART]
-      </h1>
+      <h1 id="terminal-title">COMPUTER WORLD [TODO: MAKE THIS ASCII ART]</h1>
       <InitialOutput
         isLastOutputPresent={isLastOutputPresent}
         inputRef={inputRef}
       />
       <p id="older-terminal-output">{olderOutput}</p>
       <p>{lastOutput}</p>
-      <div id="terminal-prompt">
-        <p>
-          <span id="prompt-user">guest</span>
-          <span id="prompt-at">@</span>
-          <span id="prompt-domain">michelles-senior-project</span> ~ %
-        </p>
-        <input
-          ref={inputRef}
-          type="text"
-          id="terminal-input"
-          name="terminal-input"
-          aria-label="Terminal input"
-          autoComplete="off"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleInput()}
-        />
-      </div>
+      <Prompt
+        inputRef={inputRef}
+        input={input}
+        setInput={setInput}
+        handleInput={handleInput}
+      />
     </div>
   );
 }

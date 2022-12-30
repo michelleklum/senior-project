@@ -23,6 +23,7 @@ function InitialOutput(props) {
       index++;
       if (index === text.length) {
         // We've reached the end of the initial output text.
+        // Cancel the repeating animation.
         clearInterval(typeText);
         // Focus on the terminal input element.
         if (props.inputRef.current) {
@@ -37,12 +38,12 @@ function InitialOutput(props) {
   }, [props.inputRef]);
 
   return (
-    <div
+    <p
       id={
         props.isLastOutputPresent ? "gray-initial-terminal-output" : undefined
       }
       ref={initialOutputRef}
-    ></div>
+    ></p>
   );
 }
 
