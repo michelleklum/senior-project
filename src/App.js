@@ -9,7 +9,11 @@ import Computer from "./components/Computer/Computer";
 
 function App() {
   const currentPage = useSelector(selectPage);
-  return currentPage === TERMINAL ? <Terminal /> : <Computer />;
+  return (
+    <div className="App">
+      {currentPage === TERMINAL ? <Terminal /> : <Computer />}
+    </div>
+  );
 }
 
 export default App;

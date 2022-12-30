@@ -1,0 +1,77 @@
+/* Import for the font Hack. */
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
+
+body {
+  background-color: #282c34;
+  color: white;
+}
+
+#terminal {
+  white-space: pre-line; /* Allows us to use \n for line breaks. */
+  height: 100vh; /* Make the terminal take up the whole webpage height so that if you click anywhere on the webpage, the cursor becomes focused. */
+  margin: 3rem 3rem;
+}
+
+#older-terminal-output {
+  color: #adadad;
+}
+
+/* TODO: Fix animation. */
+/* Typewriter effect for initial terminal output. */
+#last-terminal-output {
+  overflow: hidden;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.terminal-prompt {
+  font-weight: bold;
+  display: flex;
+}
+
+#terminal-input {
+  /* Remove default input styling. */
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-family: Menlo, "Hack", monospace;
+
+  /* Other styling. */
+  margin-left: 1rem;
+  flex-grow: 1;
+  caret-color: #61dafb;
+}
+
+#prompt-user {
+  color: #f79256;
+}
+
+#prompt-at {
+  color: #adadad;
+}
+
+#prompt-domain {
+  color: #61dafb;
+}
