@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
 
 html {
-  /* Set font-size of root element in order to use rem for other elements' font-sizes and make those relative to the root font-size. */
+  /* Set font-size of root element in order to use rem for other elements and make those relative to the root font-size. */
   font-size: 16px;
 }
 

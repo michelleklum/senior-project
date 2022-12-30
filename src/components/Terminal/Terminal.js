@@ -7,23 +7,23 @@ import { changePage } from "../../slices/pageSlice";
 
 function Terminal() {
   const [userInput, setUserInput] = useState("");
-  // TODO: Animate initial terminal output.
+  const [olderTerminalOutput, setOlderTerminalOutput] = useState("");
+  // TODO: Fix animation on initial terminal output.
   const initialTerminalOutput =
     'Initializing OS...\n\nLast login: Wed Dec 28 19:34:48 on ttys000\n\nType "help" to see a list of available commands.\nEager to dive in? Type "init" to enter.\n'; // TODO
   const [lastTerminalOutput, setLastTerminalOutput] = useState(
     initialTerminalOutput
   );
-  const [olderTerminalOutput, setOlderTerminalOutput] = useState("");
   const dispatch = useDispatch();
 
-  // As soon as the component renders, focus on the terminal input.
+  // As soon as the Terminal component renders, focus on the input element.
   const userInputRef = useRef();
   useEffect(() => {
     userInputRef.current.focus();
   }, []);
 
   function handleUserInput() {
-    // Include past terminal output, as well as what the user just typed.
+    // Include past terminal output (olderTerminalOutput), as well as what the user just typed (userInput), and new terminal output (lastTerminalOutput).
     let newTerminalOutput = `guest@michelles-senior-project ~ % ${userInput}\n`;
     switch (userInput) {
       case "init":

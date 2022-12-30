@@ -7,9 +7,9 @@ body {
 }
 
 #terminal {
-  white-space: pre-line; /* Allows us to use \n for line breaks. */
-  height: 100vh; /* Make the terminal take up the whole webpage height so that if you click anywhere on the webpage, the cursor becomes focused. */
+  height: 100vh; /* Maked the terminal take up the whole webpage height so that if a user clicks anywhere on the webpage, the cursor becomes focused. */
   margin: 3rem 3rem;
+  white-space: pre-line; /* Allows use of \n for line breaks. */
 }
 
 #older-terminal-output {
@@ -55,12 +55,12 @@ body {
   padding: 0;
   background-color: transparent;
   color: white;
-  font-size: 1rem;
-  font-family: Menlo, "Hack", monospace;
 
-  /* Other styling. */
+  /* Additional styling. */
   margin-left: 1rem;
   flex-grow: 1;
+  font-size: 1rem;
+  font-family: Menlo, "Hack", monospace;
   caret-color: #61dafb;
 }
 
