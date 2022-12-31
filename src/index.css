@@ -3,11 +3,12 @@
 
 /* Define custom properties for colors. */
 :root {
-  --bg-color: #282c34;
-  --main-text-color: white;
-  --gray-text-color: #adadad;
-  --orange-text-color: #f79256;
-  --blue-text-color: #61dafb;
+  --black: #282c34;
+  --white: white;
+  --gray: #adadad;
+  --orange: #f79256;
+  --blue: #61dafb;
+  --light-blue: #b0ddea;
 }
 
 html {

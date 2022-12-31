@@ -15,7 +15,7 @@ function InitialOutput(props) {
 
     // Animate initial output with a typewriter effect.
     let index = 0;
-    const typeText = setInterval(() => {
+    const textAnimationId = setInterval(() => {
       if (!initialOutputRef.current) {
         return;
       }
@@ -24,7 +24,7 @@ function InitialOutput(props) {
       if (index === text.length) {
         // We've reached the end of the initial output text.
         // Cancel the repeating animation.
-        clearInterval(typeText);
+        clearInterval(textAnimationId);
         // Focus on the terminal input element.
         if (props.inputRef.current) {
           props.inputRef.current.disabled = false;
@@ -34,7 +34,7 @@ function InitialOutput(props) {
     }, 20);
 
     // Return a clean-up function to handle the Effect firing multiple times due to React.StrictMode.
-    return () => clearInterval(typeText);
+    return () => clearInterval(textAnimationId);
   }, [props.inputRef]);
 
   return (
