@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
+    "react-winbox": "^1.4.2",
     "redux": "^4.2.0",
     "web-vitals": "^2.1.4"
   },
@@ -22,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install-dependencies": "npm install gh-pages redux react-redux @reduxjs/toolkit"
+    "install-dependencies": "npm install gh-pages redux react-redux @reduxjs/toolkit react-winbox"
   },
   "eslintConfig": {
     "extends": [

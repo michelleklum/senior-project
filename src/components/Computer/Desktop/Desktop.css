@@ -1,0 +1,14 @@
+/* Import for the font Hack. */
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
+
+/* WinBox global styling. */
+.wb-title {
+  font-family: Menlo, "Hack", monospace !important;
+  font-size: 0.9rem !important;
+}
+
+.wb-body {
+  padding: 0 0.5rem;
+  color: var(--black);
+  font-size: 0.9rem;
+}
