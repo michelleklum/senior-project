@@ -9,6 +9,13 @@ import InitialOutput from "./InitialOutput";
 import Prompt from "./Prompt";
 
 function Terminal() {
+  const title =
+    " ____  ____  _      ____  _     _____  _____ ____    _      ____  ____  _     ____    \n" +
+    "/   _\\/  _ \\/ \\__/|/  __\\/ \\ /\\/__ __\\/  __//  __\\  / \\  /|/  _ \\/  __\\/ \\   /  _ \\    \n" +
+    "|  /  | / \\|| |\\/|||  \\/|| | ||  / \\  |  \\  |  \\/|  | |  ||| / \\||  \\/|| |   | | \\|    \n" +
+    "|  \\__| \\_/|| |  |||  __/| \\_/|  | |  |  /_ |    /  | |/\\||| \\_/||    /| |_/\\| |_/|    \n" +
+    "\\____/\\____/\\_/  \\|\\_/   \\____/  \\_/  \\____\\\\_/\\_\\  \\_/  \\|\\____/\\_/\\_\\\\____/\\____/    \n";
+
   const inputRef = useRef();
 
   const [input, setInput] = useState("");
@@ -40,7 +47,7 @@ function Terminal() {
 
   return (
     <div id="terminal" onClick={() => inputRef.current.focus()}>
-      <h1 id="terminal-title">COMPUTER WORLD [TODO: MAKE THIS ASCII ART]</h1>
+      <h1 id="terminal-title">{title}</h1>
       <InitialOutput
         isLastOutputPresent={isLastOutputPresent}
         inputRef={inputRef}
