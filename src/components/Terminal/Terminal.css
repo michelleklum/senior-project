@@ -14,7 +14,7 @@ body {
 
 #terminal-title {
   padding-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   white-space: pre-wrap; /* Preserves sequences of white space for proper ASCII art printing. */
   color: var(--blue);
   text-shadow: 0 0 4px var(--blue);
