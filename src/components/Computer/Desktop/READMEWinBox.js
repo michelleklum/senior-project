@@ -1,11 +1,11 @@
 import WinBox from "react-winbox";
 import icon from "../icons/logo192.png";
 
-function InstructionWinBox() {
+function READMEWinBox() {
   return (
     <WinBox
       icon={icon}
-      title="instructions.txt"
+      title="README"
       width={500}
       height={300}
       x="center"
@@ -28,4 +28,4 @@ function InstructionWinBox() {
   );
 }
 
-export default InstructionWinBox;
+export default READMEWinBox;

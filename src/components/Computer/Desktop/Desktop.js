@@ -1,10 +1,10 @@
 import "./Desktop.css";
-import InstructionWinBox from "./InstructionWinBox";
+import READMEWinBox from "./READMEWinBox";
 
 function Desktop() {
   return (
     <div id="desktop">
-      <InstructionWinBox />
+      <READMEWinBox />
     </div>
   );
 }
