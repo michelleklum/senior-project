@@ -6,6 +6,7 @@ function READMEWinBox() {
     <WinBox
       icon={icon}
       title="README"
+      noFull={true}
       width={500}
       height={300}
       x="center"

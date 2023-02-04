@@ -1,7 +1,12 @@
 /* Import for the font Hack. */
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
 
-/* WinBox Global Styling. */
+/* WinBox Global Styling */
+.winbox {
+  /* Set margin-top so that WinBox rests just under Toolbar. */
+  margin-top: calc(2rem + 5px);
+}
+
 .wb-title {
   font-family: Menlo, "Hack", monospace !important;
   font-size: 0.9rem !important;
@@ -13,11 +18,11 @@
   font-size: 0.9rem;
 }
 
-/* Desktop App Styling. */
+/* Desktop App Styling */
 #desktop-apps {
   margin: 0.5rem;
 
-  /* Arrange desktop apps in gridbox */
+  /* Arrange desktop apps in gridbox. */
   display: grid;
   grid-template-columns: 48px 48px 48px;
   grid-template-rows: 72px 72px 72px 72px 72px 72px 72px 72px 72px;
@@ -25,7 +30,7 @@
 }
 
 #desktop-app {
-  /* Center app icon and app name vertically */
+  /* Center app icon and app name vertically. */
   display: flex;
   flex-direction: column;
   align-items: center;

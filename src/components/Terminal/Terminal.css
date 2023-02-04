@@ -7,7 +7,7 @@ body {
 }
 
 #terminal {
-  height: 100vh; /* Maked the terminal take up the whole webpage height so that if a user clicks anywhere on the webpage, the cursor becomes focused. */
+  height: 100vh; /* Make the terminal take up the whole webpage height so that if a user clicks anywhere on the webpage, the cursor becomes focused. */
   margin: 3rem 3rem;
   white-space: pre-line; /* Allows use of \n for line breaks. */
 }
