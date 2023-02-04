@@ -1,9 +1,30 @@
+import React, { useRef } from "react";
+
+import { README } from "../../../winBoxes";
+
+import { useSelector } from "react-redux";
+import { CLOSED } from "../../../slices/winBoxStates";
+import { selectWinBoxStates } from "../../../slices/winBoxSlice";
+
+import { useDispatch } from "react-redux";
+import { closeWinBox } from "../../../slices/winBoxSlice";
+
 import WinBox from "react-winbox";
 import icon from "../icons/logo192.png";
 
 function READMEWinBox() {
+  const READMEWinBoxRef = useRef();
+
+  const winBoxStates = useSelector(selectWinBoxStates);
+  const dispatch = useDispatch();
+
   return (
     <WinBox
+      ref={READMEWinBoxRef}
+      hide={winBoxStates[README] === CLOSED}
+      onclose={() =>
+        READMEWinBoxRef.current.isClosed() && dispatch(closeWinBox(README))
+      }
       icon={icon}
       title="README"
       noFull={true}

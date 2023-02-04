@@ -23,3 +23,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Override default styling for native HTML buttons. */
+button {
+  font-family: Menlo, "Hack", monospace;
+  color: var(--white);
+  padding: 0;
+  margin: 0;
+  border: hidden;
+  width: 100%;
+  background: none;
+  outline: none;
+}
