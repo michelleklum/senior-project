@@ -1,3 +1,4 @@
+/* Manages state regarding the user's current page. */
 import { createSlice } from "@reduxjs/toolkit";
 import { TERMINAL } from "./pageStates";
 

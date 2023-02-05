@@ -1,3 +1,4 @@
+/* Manages the OPEN / CLOSED state of each WinBox. */
 import { createSlice } from "@reduxjs/toolkit";
 import { OPEN, CLOSED } from "./winBoxStates";
 

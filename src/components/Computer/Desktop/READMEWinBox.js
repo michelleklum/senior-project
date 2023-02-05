@@ -18,8 +18,15 @@ function READMEWinBox(props) {
     <WinBox
       ref={props.innerRef}
       hide={winBoxStates[README] === CLOSED}
-      onclose={() =>
-        props.innerRef.current.isClosed() && dispatch(closeWinBox(README))
+      onclose={
+        // props.innerRef.current.isClosed() is necessary for the READMEWinBox to begin in
+        // the OPEN state by default, if it appears on a page rendered after a previous page.
+        // Because in such a case, the READMEWinBox will actually have been rendered on the previous page,
+        // (even though we did not actually place the READMEWinBox component on that previous page).
+        // So, when the page changes from the previous page to the current page that does actually
+        // have the READMEWinBox, the READMEWinBox will attempt to change its state to CLOSED.
+        // The props.innerRef.current.isClosed() part prevents that from happening.
+        () => props.innerRef.current.isClosed() && dispatch(closeWinBox(README))
       }
       icon={textFile}
       title="README"
