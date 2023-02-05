@@ -12,11 +12,11 @@ function DesktopApps(props) {
 
   return (
     <div id="desktop-apps">
-      {apps.map(([appName, iconSrc]) => (
+      {apps.map(([appName, icon]) => (
         <DesktopApp
           key={appName}
           appName={appName}
-          iconSrc={iconSrc}
+          icon={icon}
           appRef={props.appRefs[appName]}
         />
       ))}

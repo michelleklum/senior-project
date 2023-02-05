@@ -12,11 +12,7 @@ function DesktopApp(props) {
   return (
     <div id="desktop-app">
       <button onClick={handleClick}>
-        <img
-          src={props.iconSrc}
-          className={props.appName}
-          alt={props.appName}
-        />
+        <img src={props.icon} className={props.appName} alt={props.appName} />
         <p>{props.appName}</p>
       </button>
     </div>

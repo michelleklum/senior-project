@@ -2,9 +2,7 @@ import React, { useRef } from "react";
 
 import "./Desktop.css";
 import DesktopApps from "./DesktopApps";
-
-import READMEWinBox from "./READMEWinBox";
-import TrashWinBox from "./TrashWinBox";
+import CustomWinBoxes from "./CustomWinBoxes";
 
 function Desktop() {
   const READMEWinBoxRef = useRef();
@@ -15,8 +13,10 @@ function Desktop() {
       <DesktopApps
         appRefs={{ README: READMEWinBoxRef, TRASH: TrashWinBoxRef }}
       />
-      <READMEWinBox innerRef={READMEWinBoxRef} />
-      <TrashWinBox innerRef={TrashWinBoxRef} />
+      <CustomWinBoxes
+        READMEWinBoxRef={READMEWinBoxRef}
+        TrashWinBoxRef={TrashWinBoxRef}
+      />
     </div>
   );
 }
