@@ -4,9 +4,14 @@ import { openWinBox } from "../../../slices/winBoxSlice";
 function DesktopApp(props) {
   const dispatch = useDispatch();
 
+  function handleClick() {
+    dispatch(openWinBox(props.appName));
+    props.appRef.current.focus(); // Bring to front the WinBox corresponding to the clicked app.
+  }
+
   return (
     <div id="desktop-app">
-      <button onClick={() => dispatch(openWinBox(props.appName))}>
+      <button onClick={handleClick}>
         <img
           src={props.iconSrc}
           className={props.appName}

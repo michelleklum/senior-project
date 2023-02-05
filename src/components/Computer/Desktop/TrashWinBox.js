@@ -10,12 +10,13 @@ import { closeWinBox } from "../../../slices/winBoxSlice";
 import WinBox from "react-winbox";
 import trash from "../icons/Trash-47x44.svg";
 
-function TrashWinBox() {
+function TrashWinBox(props) {
   const winBoxStates = useSelector(selectWinBoxStates);
   const dispatch = useDispatch();
 
   return (
     <WinBox
+      ref={props.innerRef}
       hide={winBoxStates[TRASH] === CLOSED}
       onclose={() => dispatch(closeWinBox(TRASH))}
       icon={trash}

@@ -1,5 +1,3 @@
-import React, { useRef } from "react";
-
 import { README } from "../../../winBoxes";
 
 import { useSelector } from "react-redux";
@@ -12,18 +10,16 @@ import { closeWinBox } from "../../../slices/winBoxSlice";
 import WinBox from "react-winbox";
 import textFile from "../icons/TextFile-47x44.svg";
 
-function READMEWinBox() {
-  const READMEWinBoxRef = useRef();
-
+function READMEWinBox(props) {
   const winBoxStates = useSelector(selectWinBoxStates);
   const dispatch = useDispatch();
 
   return (
     <WinBox
-      ref={READMEWinBoxRef}
+      ref={props.innerRef}
       hide={winBoxStates[README] === CLOSED}
       onclose={() =>
-        READMEWinBoxRef.current.isClosed() && dispatch(closeWinBox(README))
+        props.innerRef.current.isClosed() && dispatch(closeWinBox(README))
       }
       icon={textFile}
       title="README"
