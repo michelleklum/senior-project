@@ -10,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { closeWinBox } from "../../../slices/winBoxSlice";
 
 import WinBox from "react-winbox";
-import icon from "../icons/logo192.png";
+import textFile from "../icons/TextFile-47x44.svg";
 
 function READMEWinBox() {
   const READMEWinBoxRef = useRef();
@@ -25,7 +25,7 @@ function READMEWinBox() {
       onclose={() =>
         READMEWinBoxRef.current.isClosed() && dispatch(closeWinBox(README))
       }
-      icon={icon}
+      icon={textFile}
       title="README"
       noFull={true}
       width={500}

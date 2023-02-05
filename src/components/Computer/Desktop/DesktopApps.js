@@ -1,11 +1,12 @@
 import DesktopApp from "./DesktopApp";
 
 import { README, TRASH } from "../../../winBoxes";
+import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
 
 function DesktopApps() {
   const apps = [
-    [README, trash],
+    [README, textFile],
     [TRASH, trash],
   ];
 
