@@ -6,7 +6,7 @@ function DesktopApp(props) {
 
   function handleClick() {
     dispatch(openWinBox(props.appName));
-    props.appRef.current.focus(); // Bring to front the WinBox corresponding to the clicked app.
+    props.winBoxRef.current.focus(); // Bring to front the WinBox corresponding to the clicked app.
   }
 
   return (

@@ -11,7 +11,7 @@ function Desktop() {
   return (
     <div id="desktop">
       <DesktopApps
-        appRefs={{ README: READMEWinBoxRef, TRASH: TrashWinBoxRef }}
+        winBoxRefs={{ README: READMEWinBoxRef, TRASH: TrashWinBoxRef }}
       />
       <CustomWinBoxes
         READMEWinBoxRef={READMEWinBoxRef}

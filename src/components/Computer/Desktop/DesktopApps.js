@@ -17,7 +17,7 @@ function DesktopApps(props) {
           key={appName}
           appName={appName}
           icon={icon}
-          appRef={props.appRefs[appName]}
+          winBoxRef={props.winBoxRefs[appName]}
         />
       ))}
     </div>
