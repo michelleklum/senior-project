@@ -11,9 +11,6 @@ function CustomWinBox(props) {
   const winBoxStates = useSelector(selectWinBoxStates);
   const dispatch = useDispatch();
 
-  console.log(props.appName, "winBoxState:", winBoxStates[props.appName]);
-  console.log("props.innerRef", props.innerRef);
-
   return (
     <WinBox
       ref={props.innerRef}
@@ -26,9 +23,12 @@ function CustomWinBox(props) {
         // So, when the page changes from the previous page to the current page where we actually
         // placed the WinBox, the WinBox will attempt to change its state to CLOSED.
         // The props.innerRef.current.isClosed() part prevents that from happening.
-        () =>
+        function () {
+          console.log("props.innerRef", props.innerRef);
+
           props.innerRef.current.isClosed() &&
-          dispatch(closeWinBox(props.appName))
+            dispatch(closeWinBox(props.appName));
+        }
       }
       icon={props.icon}
       title={props.appName}
