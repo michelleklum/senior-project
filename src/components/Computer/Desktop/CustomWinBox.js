@@ -11,6 +11,12 @@ function CustomWinBox(props) {
   const winBoxStates = useSelector(selectWinBoxStates);
   const dispatch = useDispatch();
 
+  console.log("props.innerRef", props.innerRef);
+  console.log(
+    "props.innerRef.current.isClosed()",
+    props.innerRef.current.isClosed()
+  );
+
   return (
     <WinBox
       ref={props.innerRef}
