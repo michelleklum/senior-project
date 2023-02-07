@@ -12,6 +12,7 @@ function CustomWinBox(props) {
   const dispatch = useDispatch();
 
   const handleClose = (force, appName) => {
+    // TODO: Uncomment the if statement below when in development mode:
     // props.innerRef.current.state.closed is necessary for a WinBox that begins in the OPEN state,
     // if it appears on a page rendered after a previous page.
     // Because in such a case, the WinBox will actually have been rendered on the previous page,
@@ -19,15 +20,13 @@ function CustomWinBox(props) {
     // So, when the page changes from the previous page to the current page where we actually
     // placed the WinBox, the WinBox will attempt to change its state to CLOSED.
     // The props.innerRef.current.state.closed part prevents that from happening.
-    if (props.innerRef.current.state.closed) {
-      console.log(
-        "CustomWinBox props.innerRef.current",
-        props.innerRef.current
-      );
-      dispatch(closeWinBox(appName));
-      // Window-specific onclose, returns true if it does not need the default close process.
-      return true;
-    }
+
+    // if (props.innerRef.current.state.closed) {
+    console.log("CustomWinBox props.innerRef.current", props.innerRef.current);
+    dispatch(closeWinBox(appName));
+    // Window-specific onclose, returns true if it does not need the default close process.
+    return true;
+    // }
   };
 
   return (
