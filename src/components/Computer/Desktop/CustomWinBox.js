@@ -19,7 +19,7 @@ function CustomWinBox(props) {
     // So, when the page changes from the previous page to the current page where we actually
     // placed the WinBox, the WinBox will attempt to change its state to CLOSED.
     // The props.innerRef.current.state.closed part prevents that from happening.
-    console.log("props.innerRef.current", props.innerRef.current);
+    console.log("CustomWinBox props.innerRef.current", props.innerRef.current);
     if (props.innerRef.current.state.closed) {
       dispatch(closeWinBox(appName));
       // Window-specific onclose, returns true if it does not need the default close process.
