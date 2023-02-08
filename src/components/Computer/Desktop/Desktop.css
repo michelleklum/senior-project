@@ -29,9 +29,10 @@
 
   /* Arrange desktop apps in gridbox. */
   display: grid;
-  grid-template-columns: 48px 48px 48px;
-  grid-template-rows: 72px 72px 72px 72px 72px 72px 72px 72px 72px;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
   column-gap: 0.5rem;
+  align-items: end; /* Line up app names from the bottom. */
 }
 
 #desktop-app {

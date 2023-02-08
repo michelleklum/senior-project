@@ -1,10 +1,12 @@
 import CustomWinBox from "./CustomWinBox";
 import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
+import FolderWinBoxContent from "./FolderWinBoxContent";
 
-import { README, TRASH } from "../../../winBoxes";
+import { README, TRASH, FOLDER } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
+import folder from "../icons/Folder-42x30.svg";
 
 function CustomWinBoxes(props) {
   const winBoxes = [
@@ -27,6 +29,16 @@ function CustomWinBoxes(props) {
       x: 700,
       y: 300,
       children: <TrashWinBoxContent />,
+    },
+    {
+      appName: FOLDER,
+      innerRef: props.FolderWinBoxRef,
+      icon: folder,
+      width: 500,
+      height: 350,
+      x: 30,
+      y: 250,
+      children: <FolderWinBoxContent />,
     },
   ];
 
