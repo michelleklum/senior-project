@@ -36,3 +36,8 @@
   color: var(--black);
   font-size: 0.9rem;
 }
+
+/* WinBox Image and Caption Styling */
+.img p {
+  margin-top: 0;
+}

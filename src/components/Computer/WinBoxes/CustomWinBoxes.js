@@ -66,7 +66,7 @@ function CustomWinBoxes(props) {
       width: 500,
       height: 600,
       x: 600,
-      y: 180,
+      y: 50,
       children: <Erasure1WinBoxContent />,
       headerColor: "white",
     },
