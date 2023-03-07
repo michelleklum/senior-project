@@ -7,11 +7,11 @@ function AppFileIcon(props) {
   function handleClick(e) {
     dispatch(openWinBox(props.appFileName));
 
-    // Ensure that click doesn't propagate to parent WinBox component
+    // Ensure that the click does not propagate to parent WinBox component
     // when the app / file clicked is inside a WinBox component.
     // Because if the click propagates to the parent, both the parent WinBox component
     // and the WinBox component for the clicked app / file will have
-    // their z-index incremented by 1, meaning the parent WinBox component will strangely
+    // their z-index incremented by 1, meaning the parent WinBox component will oddly
     // remain in front of the WinBox component for the clicked app / file.
     e.stopPropagation();
     // Bring to front the WinBox corresponding to the clicked app / file.
