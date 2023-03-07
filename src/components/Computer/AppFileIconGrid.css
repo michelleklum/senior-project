@@ -21,3 +21,12 @@
   margin-top: 0.4rem;
   font-size: 0.75rem;
 }
+
+/* App and File Icon Grid Styling Inside WinBoxes */
+.custom-winbox #app-file-icon p {
+  color: var(--black);
+}
+
+.custom-winbox #app-file-icon-grid {
+  margin-left: 0.1rem;
+}

@@ -7,9 +7,10 @@ function Desktop() {
   const READMEWinBoxRef = useRef();
   const TrashWinBoxRef = useRef();
   const FolderWinBoxRef = useRef();
+  const ErasureWinBoxRef = useRef();
 
   return (
-    <div id="desktop">
+    <div>
       <DesktopAppsFiles
         winBoxRefs={{
           README: READMEWinBoxRef,
@@ -21,6 +22,7 @@ function Desktop() {
         READMEWinBoxRef={READMEWinBoxRef}
         TrashWinBoxRef={TrashWinBoxRef}
         FolderWinBoxRef={FolderWinBoxRef}
+        ErasureWinBoxRef={ErasureWinBoxRef}
       />
     </div>
   );

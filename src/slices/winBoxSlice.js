@@ -2,7 +2,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { OPEN, CLOSED } from "./winBoxStates";
 
-const initial_winbox_states = { README: OPEN, TRASH: CLOSED, FOLDER: CLOSED };
+const initial_winbox_states = {
+  README: OPEN,
+  TRASH: CLOSED,
+  FOLDER: CLOSED,
+  ERASURE: CLOSED,
+};
 
 export const winBoxSlice = createSlice({
   name: "winBox",

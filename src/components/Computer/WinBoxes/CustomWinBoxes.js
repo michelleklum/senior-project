@@ -2,8 +2,9 @@ import CustomWinBox from "./CustomWinBox";
 import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
 import FolderWinBoxContent from "./FolderWinBoxContent";
+import ErasureWinBoxContent from "./ErasureWinBoxContent";
 
-import { README, TRASH, FOLDER } from "../../../winBoxes";
+import { README, TRASH, FOLDER, ERASURE } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-42x30.svg";
@@ -28,7 +29,9 @@ function CustomWinBoxes(props) {
       height: 350,
       x: 700,
       y: 300,
-      children: <TrashWinBoxContent />,
+      children: (
+        <TrashWinBoxContent ErasureWinBoxRef={props.ErasureWinBoxRef} />
+      ),
     },
     {
       appName: FOLDER,
@@ -40,10 +43,20 @@ function CustomWinBoxes(props) {
       y: 250,
       children: <FolderWinBoxContent />,
     },
+    {
+      appName: ERASURE,
+      innerRef: props.ErasureWinBoxRef,
+      icon: textFile,
+      width: 500,
+      height: 550,
+      x: 170,
+      y: 60,
+      children: <ErasureWinBoxContent />,
+    },
   ];
 
   return (
-    <div id="desktop-apps">
+    <div>
       {winBoxes.map((winBox) => (
         <CustomWinBox
           key={winBox.appName}

@@ -38,6 +38,7 @@ function CustomWinBox(props) {
 
   return (
     <WinBox
+      className="custom-winbox"
       ref={props.innerRef}
       hide={winBoxStates[props.appName] === CLOSED}
       onclose={handleClose}
