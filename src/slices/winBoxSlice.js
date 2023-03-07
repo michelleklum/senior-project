@@ -7,6 +7,7 @@ const initial_winbox_states = {
   TRASH: CLOSED,
   FOLDER: CLOSED,
   ERASURE: CLOSED,
+  ERASURE1: CLOSED,
 };
 
 export const winBoxSlice = createSlice({

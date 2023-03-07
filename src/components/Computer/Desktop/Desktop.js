@@ -8,6 +8,7 @@ function Desktop() {
   const TrashWinBoxRef = useRef();
   const FolderWinBoxRef = useRef();
   const ErasureWinBoxRef = useRef();
+  const Erasure1WinBoxRef = useRef();
 
   return (
     <div>
@@ -23,6 +24,7 @@ function Desktop() {
         TrashWinBoxRef={TrashWinBoxRef}
         FolderWinBoxRef={FolderWinBoxRef}
         ErasureWinBoxRef={ErasureWinBoxRef}
+        Erasure1WinBoxRef={Erasure1WinBoxRef}
       />
     </div>
   );

@@ -3,8 +3,9 @@ import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
 import FolderWinBoxContent from "./FolderWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
+import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
 
-import { README, TRASH, FOLDER, ERASURE } from "../../../winBoxes";
+import { README, TRASH, FOLDER, ERASURE, ERASURE1 } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-42x30.svg";
@@ -31,7 +32,10 @@ function CustomWinBoxes(props) {
       x: 700,
       y: 300,
       children: (
-        <TrashWinBoxContent ErasureWinBoxRef={props.ErasureWinBoxRef} />
+        <TrashWinBoxContent
+          ErasureWinBoxRef={props.ErasureWinBoxRef}
+          Erasure1WinBoxRef={props.Erasure1WinBoxRef}
+        />
       ),
       headerColor: "#b5b4b4",
     },
@@ -54,6 +58,16 @@ function CustomWinBoxes(props) {
       x: 170,
       y: 60,
       children: <ErasureWinBoxContent />,
+      headerColor: "white",
+    },
+    {
+      appName: ERASURE1,
+      innerRef: props.Erasure1WinBoxRef,
+      width: 500,
+      height: 600,
+      x: 600,
+      y: 180,
+      children: <Erasure1WinBoxContent />,
       headerColor: "white",
     },
   ];
