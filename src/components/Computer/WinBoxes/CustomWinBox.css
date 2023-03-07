@@ -41,3 +41,12 @@
 .img p {
   margin-top: 0;
 }
+
+/* WinBox Image Styling for Text with Image on Right */
+.img-right {
+  display: flex;
+}
+
+.img-right img {
+  margin-left: 0.3rem;
+}

@@ -1,5 +1,3 @@
-import "./Erasure1WinBoxContent.css";
-
 function Erasure1WinBoxContent() {
   return (
     <div>
@@ -8,9 +6,9 @@ function Erasure1WinBoxContent() {
         In the 1960s, when programming was seen as a menial job, and en found
         crunching numbers and punching cards distasteful, a quarter of computer
         programmers in America were women. During World War II, women computers
-        assisted the Allies' code-breaking efforts. TODO FACTCHECK: At NASA,
-        they computed mission-critical trajectories on which the success of
-        [ENTER MISSIONS HERE] hinged. "They were poets of bits."
+        were integral to the Allies' code-breaking efforts. TODO FACTCHECK: At
+        NASA, they computed mission-critical trajectories on which the success
+        of [ENTER MISSIONS HERE] hinged. "They were poets of bits."
       </p>
       <div className="img">
         <img
@@ -25,7 +23,7 @@ function Erasure1WinBoxContent() {
           </i>
         </p>
       </div>
-      <div id="ada">
+      <div className="img img-right">
         <p>
           In fact, the first computer programmer, Ada Lovelace, was a woman. In
           the early 1800s, Lovelace, the daughter of the poet Lord Byron, worked
@@ -39,8 +37,11 @@ function Erasure1WinBoxContent() {
         />
       </div>
       <p>
-        TODO: SOMETHING ABOUT HOW WOMEN HAVE BEEN ERASED FROM THE HISTORY OF
-        COMPUTING
+        It's a disgrace, then, that these women and their efforts have often
+        gone unrecognized, erased from the computing canon, and omitted from the
+        annals of history. CITE EXAMPLES OF being omitted from papers,
+        publications, newspaper articles, etc. TODO: SOMETHING ABOUT HOW WOMEN
+        HAVE BEEN ERASED FROM THE HISTORY OF COMPUTING
       </p>
       <p>
         In the physical world, when a paper-and-pencil writer erases the written
