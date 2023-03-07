@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import "./Desktop.css";
 import DesktopApps from "./DesktopApps";
-import CustomWinBoxes from "./CustomWinBoxes";
+import CustomWinBoxes from "../WinBoxes/CustomWinBoxes";
 
 function Desktop() {
   const READMEWinBoxRef = useRef();

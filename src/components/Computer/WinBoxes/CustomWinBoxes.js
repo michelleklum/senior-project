@@ -1,7 +1,7 @@
 import CustomWinBox from "./CustomWinBox";
-import READMEWinBoxContent from "./WinBoxes/READMEWinBoxContent";
-import TrashWinBoxContent from "./WinBoxes/TrashWinBoxContent";
-import FolderWinBoxContent from "./WinBoxes/FolderWinBoxContent";
+import READMEWinBoxContent from "./READMEWinBoxContent";
+import TrashWinBoxContent from "./TrashWinBoxContent";
+import FolderWinBoxContent from "./FolderWinBoxContent";
 
 import { README, TRASH, FOLDER } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
