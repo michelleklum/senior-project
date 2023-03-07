@@ -1,3 +1,4 @@
+import "./CustomWinBox.css";
 import WinBox from "react-winbox";
 
 import { useSelector } from "react-redux";

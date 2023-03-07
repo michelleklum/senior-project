@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 
-import "./Desktop.css";
-import DesktopApps from "./DesktopApps";
+import DesktopAppsFiles from "./DesktopAppsFiles";
 import CustomWinBoxes from "../WinBoxes/CustomWinBoxes";
 
 function Desktop() {
@@ -11,7 +10,7 @@ function Desktop() {
 
   return (
     <div id="desktop">
-      <DesktopApps
+      <DesktopAppsFiles
         winBoxRefs={{
           README: READMEWinBoxRef,
           TRASH: TrashWinBoxRef,
