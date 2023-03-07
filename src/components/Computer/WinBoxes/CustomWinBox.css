@@ -17,6 +17,20 @@
   font-size: 0.9rem !important;
 }
 
+/* Set title font color to black, used when header background is white. */
+.custom-winbox-black-font .wb-title {
+  color: var(--black);
+}
+
+/* Convert control SVGs to #282c34, used when header background is white. */
+.custom-winbox-black-font .wb-control {
+  /* brightness(0) saturate(100%) converts the SVG to black. */
+  /* The rest converts a black SVG to #282c34. */
+  /* See https://codepen.io/sosuke/pen/Pjoqqp for more information. */
+  filter: brightness(0) saturate(100%) invert(13%) sepia(10%) saturate(1017%)
+    hue-rotate(181deg) brightness(94%) contrast(89%);
+}
+
 .wb-body {
   padding: 0 0.5rem;
   color: var(--black);

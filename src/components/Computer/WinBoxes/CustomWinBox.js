@@ -36,9 +36,12 @@ function CustomWinBox(props) {
     }
   };
 
+  const blackFontClassName =
+    props.headerColor === "white" ? "custom-winbox-black-font" : null;
+
   return (
     <WinBox
-      className="custom-winbox"
+      className={`custom-winbox ${blackFontClassName}`}
       ref={props.innerRef}
       hide={winBoxStates[props.appName] === CLOSED}
       onclose={handleClose}
@@ -50,7 +53,7 @@ function CustomWinBox(props) {
       y={props.y}
       children={props.children}
       noFull={true}
-      background="#b5b4b4"
+      background={props.headerColor}
     ></WinBox>
   );
 }

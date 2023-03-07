@@ -20,6 +20,7 @@ function CustomWinBoxes(props) {
       x: "center",
       y: 70,
       children: <READMEWinBoxContent />,
+      headerColor: "#b5b4b4",
     },
     {
       appName: TRASH,
@@ -32,6 +33,7 @@ function CustomWinBoxes(props) {
       children: (
         <TrashWinBoxContent ErasureWinBoxRef={props.ErasureWinBoxRef} />
       ),
+      headerColor: "#b5b4b4",
     },
     {
       appName: FOLDER,
@@ -42,16 +44,17 @@ function CustomWinBoxes(props) {
       x: 30,
       y: 250,
       children: <FolderWinBoxContent />,
+      headerColor: "#b5b4b4",
     },
     {
       appName: ERASURE,
       innerRef: props.ErasureWinBoxRef,
-      icon: textFile,
       width: 500,
       height: 550,
       x: 170,
       y: 60,
       children: <ErasureWinBoxContent />,
+      headerColor: "white",
     },
   ];
 
@@ -68,6 +71,7 @@ function CustomWinBoxes(props) {
           x={winBox.x}
           y={winBox.y}
           children={winBox.children}
+          headerColor={winBox.headerColor}
         />
       ))}
     </div>
