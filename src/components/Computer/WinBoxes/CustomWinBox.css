@@ -45,6 +45,7 @@
 /* WinBox Image Styling for Text with Image on Right */
 .img-right {
   display: flex;
+  align-items: flex-start;
 }
 
 .img-right img {
