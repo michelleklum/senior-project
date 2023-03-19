@@ -46,6 +46,8 @@ button {
 }
 
 .grid-icon {
+  font-size: 0.75rem;
+
   /* Center icon and icon name vertically. */
   display: flex;
   flex-direction: column;
@@ -61,6 +63,7 @@ button {
 
 /* Global Icon Grid Styling Inside WinBoxes. */
 .custom-winbox .grid-icon {
+  font-size: 0.65rem;
   color: var(--black);
   text-decoration: none;
 }
