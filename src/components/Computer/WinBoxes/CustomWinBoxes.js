@@ -3,6 +3,7 @@ import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
 import SourcesWinBoxContent from "./SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent";
+import TranslateWinBoxContent from "./TranslateWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
 
@@ -11,6 +12,7 @@ import {
   TRASH,
   SOURCES,
   TERMINAL,
+  TRANSLATE,
   ERASURE,
   ERASURE1,
 } from "../../../winBoxes";
@@ -18,6 +20,7 @@ import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-47x44.svg";
 import terminal from "../icons/Terminal-47x44.svg";
+import translate from "../icons/Translate-47x44.svg";
 
 function CustomWinBoxes(props) {
   const winBoxes = [
@@ -68,6 +71,17 @@ function CustomWinBoxes(props) {
       x: 30,
       y: 250,
       children: <TerminalWinBoxContent />,
+      headerColor: "#b5b4b4",
+    },
+    {
+      appName: TRANSLATE,
+      innerRef: props.TranslateWinBoxRef,
+      icon: translate,
+      width: 700,
+      height: 400,
+      x: 120,
+      y: 85,
+      children: <TranslateWinBoxContent />,
       headerColor: "#b5b4b4",
     },
     {
