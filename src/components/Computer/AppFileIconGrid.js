@@ -3,7 +3,7 @@ import AppFileIcon from "./AppFileIcon";
 
 function AppFileIconGrid(props) {
   return (
-    <div id="app-file-icon-grid">
+    <div className="grid" id="app-file-icon-grid">
       {props.appsFiles.map(([appFileName, icon]) => (
         <AppFileIcon
           key={appFileName}

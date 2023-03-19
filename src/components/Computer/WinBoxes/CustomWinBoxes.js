@@ -1,11 +1,11 @@
 import CustomWinBox from "./CustomWinBox";
 import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
-import FolderWinBoxContent from "./FolderWinBoxContent";
+import SourcesWinBoxContent from "./SourcesWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
 
-import { README, TRASH, FOLDER, ERASURE, ERASURE1 } from "../../../winBoxes";
+import { README, TRASH, SOURCES, ERASURE, ERASURE1 } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-42x30.svg";
@@ -40,14 +40,14 @@ function CustomWinBoxes(props) {
       headerColor: "#b5b4b4",
     },
     {
-      appName: FOLDER,
-      innerRef: props.FolderWinBoxRef,
+      appName: SOURCES,
+      innerRef: props.SourcesWinBoxRef,
       icon: folder,
-      width: 500,
-      height: 350,
+      width: 470,
+      height: 330,
       x: 30,
       y: 250,
-      children: <FolderWinBoxContent />,
+      children: <SourcesWinBoxContent />,
       headerColor: "#b5b4b4",
     },
     {

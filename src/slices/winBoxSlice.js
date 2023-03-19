@@ -5,7 +5,7 @@ import { OPEN, CLOSED } from "./winBoxStates";
 const initial_winbox_states = {
   README: OPEN,
   TRASH: CLOSED,
-  FOLDER: CLOSED,
+  SOURCES: CLOSED,
   ERASURE: CLOSED,
   ERASURE1: CLOSED,
 };

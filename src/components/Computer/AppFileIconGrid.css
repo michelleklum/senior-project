@@ -1,32 +1,9 @@
 /* App and File Icon Grid Styling */
 #app-file-icon-grid {
-  margin: 0.5rem;
-
-  /* Arrange apps and files in gridbox. */
-  display: grid;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
-  column-gap: 0.5rem;
-  align-items: end; /* Line up app / file names from the bottom. */
+  grid-template-columns: 61px 61px 61px;
+  grid-template-rows: 82px 82px 82px 82px 82px 82px 82px 82px 82px;
 }
 
-#app-file-icon {
-  /* Center app / file icon and name vertically. */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#app-file-icon p {
-  margin-top: 0.4rem;
+#app-file-icon-grid .grid-icon {
   font-size: 0.75rem;
-}
-
-/* App and File Icon Grid Styling Inside WinBoxes */
-.custom-winbox #app-file-icon p {
-  color: var(--black);
-}
-
-.custom-winbox #app-file-icon-grid {
-  margin-left: 0.1rem;
 }

@@ -35,3 +35,32 @@ button {
   background: none;
   outline: none;
 }
+
+/* Global Icon Grid Styling. Applies to AppFileIconGrid and SourcesWinBoxContent */
+.grid {
+  margin-top: 0.8rem;
+
+  /* Arrange icons in gridbox. */
+  display: grid;
+  column-gap: 0.5rem;
+}
+
+.grid-icon {
+  /* Center icon and icon name vertically. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* Make icon flush to top of flexbox column
+     and icon name flush to bottom of flexbox column
+     so icons are aligned at top and icon names at bottom. */
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Global Icon Grid Styling Inside WinBoxes. */
+.custom-winbox .grid-icon {
+  color: var(--black);
+  text-decoration: none;
+}

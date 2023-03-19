@@ -19,16 +19,14 @@ function AppFileIcon(props) {
   }
 
   return (
-    <div id="app-file-icon">
-      <button onClick={handleClick}>
-        <img
-          src={props.icon}
-          className={props.appFileName}
-          alt={props.appFileName}
-        />
-        <p>{props.appFileName}</p>
-      </button>
-    </div>
+    <button className="grid-icon" onClick={handleClick}>
+      <img
+        src={props.icon}
+        className={props.appFileName}
+        alt={props.appFileName}
+      />
+      <p>{props.appFileName}</p>
+    </button>
   );
 }
 
