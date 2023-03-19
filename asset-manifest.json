@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/senior-project/static/css/main.9ab7c9fd.css",
-    "main.js": "/senior-project/static/js/main.a3b4151e.js",
+    "main.css": "/senior-project/static/css/main.5f8cd85e.css",
+    "main.js": "/senior-project/static/js/main.c20b10a9.js",
     "static/js/787.e6b8966f.chunk.js": "/senior-project/static/js/787.e6b8966f.chunk.js",
+    "static/media/AdaLovelace.png": "/senior-project/static/media/AdaLovelace.86b534fe6fb0f37fdc9e.png",
+    "static/media/WomenComputersEniac.png": "/senior-project/static/media/WomenComputersEniac.4e5ede37cab92f99b4f3.png",
+    "static/media/LinkEarthMouse-47x44.svg": "/senior-project/static/media/LinkEarthMouse-47x44.938a3c0a340e4827789cbce347233c9d.svg",
     "static/media/Trash-47x44.svg": "/senior-project/static/media/Trash-47x44.d34034c4d9cfb7b93d3208bd23c105f4.svg",
+    "static/media/Book-47x44.svg": "/senior-project/static/media/Book-47x44.ebdf51ea4b447ec135a013e92cde69c4.svg",
     "static/media/Folder-42x30.svg": "/senior-project/static/media/Folder-42x30.b840f80a12577c26ef58d9bc0ce19479.svg",
     "static/media/TextFile-47x44.svg": "/senior-project/static/media/TextFile-47x44.f2c47cac63870180d70db24931b7e3cb.svg",
     "index.html": "/senior-project/index.html",
-    "main.9ab7c9fd.css.map": "/senior-project/static/css/main.9ab7c9fd.css.map",
-    "main.a3b4151e.js.map": "/senior-project/static/js/main.a3b4151e.js.map",
+    "main.5f8cd85e.css.map": "/senior-project/static/css/main.5f8cd85e.css.map",
+    "main.c20b10a9.js.map": "/senior-project/static/js/main.c20b10a9.js.map",
     "787.e6b8966f.chunk.js.map": "/senior-project/static/js/787.e6b8966f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ab7c9fd.css",
-    "static/js/main.a3b4151e.js"
+    "static/css/main.5f8cd85e.css",
+    "static/js/main.c20b10a9.js"
   ]
 }
