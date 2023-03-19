@@ -12,9 +12,6 @@ function READMEWinBoxContent() {
         which you interact with the various computer interfaces on this website.
       </p>
       <p>We hope you enjoy!</p>
-      <p>
-        <b>TODO: UPDATE ICON</b>
-      </p>
     </Fragment>
   );
 }
