@@ -1,15 +1,17 @@
 import AppFileIconGrid from "../AppFileIconGrid";
 
-import { README, TRASH, SOURCES } from "../../../winBoxes";
+import { README, TRASH, SOURCES, TERMINAL } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
-import folder from "../icons/Folder-42x30.svg";
+import folder from "../icons/Folder-47x44.svg";
+import terminal from "../icons/Terminal-47x44.svg";
 
 function DesktopAppsFiles(props) {
   const appsFiles = [
     [README, textFile],
     [TRASH, trash],
     [SOURCES, folder],
+    [TERMINAL, terminal],
   ];
 
   return (

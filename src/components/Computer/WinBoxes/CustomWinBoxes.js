@@ -2,13 +2,22 @@ import CustomWinBox from "./CustomWinBox";
 import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
 import SourcesWinBoxContent from "./SourcesWinBoxContent";
+import TerminalWinBoxContent from "./TerminalWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
 
-import { README, TRASH, SOURCES, ERASURE, ERASURE1 } from "../../../winBoxes";
+import {
+  README,
+  TRASH,
+  SOURCES,
+  TERMINAL,
+  ERASURE,
+  ERASURE1,
+} from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
-import folder from "../icons/Folder-42x30.svg";
+import folder from "../icons/Folder-47x44.svg";
+import terminal from "../icons/Terminal-47x44.svg";
 
 function CustomWinBoxes(props) {
   const winBoxes = [
@@ -45,9 +54,20 @@ function CustomWinBoxes(props) {
       icon: folder,
       width: 470,
       height: 330,
+      x: 800,
+      y: 145,
+      children: <SourcesWinBoxContent />,
+      headerColor: "#b5b4b4",
+    },
+    {
+      appName: TERMINAL,
+      innerRef: props.TerminalWinBoxRef,
+      icon: terminal,
+      width: 560,
+      height: 360,
       x: 30,
       y: 250,
-      children: <SourcesWinBoxContent />,
+      children: <TerminalWinBoxContent />,
       headerColor: "#b5b4b4",
     },
     {

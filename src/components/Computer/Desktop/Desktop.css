@@ -1,5 +1,4 @@
-/* Desktop Styling */
-.SOURCES {
-  /* Center SOURCES folder icon to the other desktop icons in its row. */
-  margin: auto;
+/* Desktop app and file icon grid styling. */
+#desktop .grid {
+  margin-left: 0.5rem;
 }

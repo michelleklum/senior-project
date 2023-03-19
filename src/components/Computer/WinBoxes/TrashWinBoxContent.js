@@ -10,15 +10,13 @@ function TrashWinBoxContent(props) {
   ];
 
   return (
-    <div>
-      <AppFileIconGrid
-        appsFiles={appsFiles}
-        winBoxRefs={{
-          ERASURE: props.ErasureWinBoxRef,
-          ERASURE1: props.Erasure1WinBoxRef,
-        }}
-      />
-    </div>
+    <AppFileIconGrid
+      appsFiles={appsFiles}
+      winBoxRefs={{
+        ERASURE: props.ErasureWinBoxRef,
+        ERASURE1: props.Erasure1WinBoxRef,
+      }}
+    />
   );
 }
 

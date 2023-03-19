@@ -6,6 +6,7 @@ const initial_winbox_states = {
   README: OPEN,
   TRASH: CLOSED,
   SOURCES: CLOSED,
+  TERMINAL: CLOSED,
   ERASURE: CLOSED,
   ERASURE1: CLOSED,
 };
