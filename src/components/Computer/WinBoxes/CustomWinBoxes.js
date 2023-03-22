@@ -4,6 +4,7 @@ import TrashWinBoxContent from "./TrashWinBoxContent";
 import SourcesWinBoxContent from "./SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent";
 import TranslateWinBoxContent from "./TranslateWinBoxContent";
+import DialogueWinBoxContent from "./DialogueWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
 
@@ -13,6 +14,7 @@ import {
   SOURCES,
   TERMINAL,
   TRANSLATE,
+  DIALOGUE,
   ERASURE,
   ERASURE1,
 } from "../../../winBoxes";
@@ -21,6 +23,7 @@ import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-47x44.svg";
 import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
+import chat from "../icons/Chat-47x44.svg";
 
 function CustomWinBoxes(props) {
   const winBoxes = [
@@ -82,6 +85,17 @@ function CustomWinBoxes(props) {
       x: 120,
       y: 85,
       children: <TranslateWinBoxContent />,
+      headerColor: "#b5b4b4",
+    },
+    {
+      appName: DIALOGUE,
+      innerRef: props.DialogueWinBoxRef,
+      icon: chat,
+      width: 500,
+      height: 600,
+      x: 120,
+      y: 40,
+      children: <DialogueWinBoxContent />,
       headerColor: "#b5b4b4",
     },
     {

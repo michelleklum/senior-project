@@ -10,6 +10,7 @@ function Desktop() {
   const SourcesWinBoxRef = useRef();
   const TerminalWinBoxRef = useRef();
   const TranslateWinBoxRef = useRef();
+  const DialogueWinBoxRef = useRef();
   const ErasureWinBoxRef = useRef();
   const Erasure1WinBoxRef = useRef();
 
@@ -22,6 +23,7 @@ function Desktop() {
           SOURCES: SourcesWinBoxRef,
           TERMINAL: TerminalWinBoxRef,
           TRANSLATE: TranslateWinBoxRef,
+          DIALOGUE: DialogueWinBoxRef,
         }}
       />
       <CustomWinBoxes
@@ -30,6 +32,7 @@ function Desktop() {
         SourcesWinBoxRef={SourcesWinBoxRef}
         TerminalWinBoxRef={TerminalWinBoxRef}
         TranslateWinBoxRef={TranslateWinBoxRef}
+        DialogueWinBoxRef={DialogueWinBoxRef}
         ErasureWinBoxRef={ErasureWinBoxRef}
         Erasure1WinBoxRef={Erasure1WinBoxRef}
       />
