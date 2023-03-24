@@ -1,8 +1,8 @@
 import "./SourcesWinBoxContent.css";
 import Source from "./Source";
 
-import book from "../icons/Book-47x44.svg";
-import linkEarthMouse from "../icons/LinkEarthMouse-47x44.svg";
+import book from "../../icons/Book-47x44.svg";
+import linkEarthMouse from "../../icons/LinkEarthMouse-47x44.svg";
 
 function SourcesWinBoxContent() {
   const sources = [

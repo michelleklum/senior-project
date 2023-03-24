@@ -1,4 +1,3 @@
-import "./Terminal.css";
 import React, { useState, useRef } from "react";
 
 import { useDispatch } from "react-redux";

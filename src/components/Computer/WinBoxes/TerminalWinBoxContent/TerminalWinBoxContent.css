@@ -1,23 +1,11 @@
-/* Import for the font Hack. */
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
+#terminal {
+  height: 100%; /* Make the terminal take up the whole WinBox height so that if a user clicks anywhere in the WinBox, the cursor becomes focused. */
+  overflow: auto; /* Ensures any overflow content still has dark background, even as terminal input increases. */
+  padding: 0 0.5rem;
+  white-space: pre-line; /* Allows use of \n for line breaks. */
 
-body {
   background-color: var(--black);
   color: var(--white);
-}
-
-#terminal {
-  height: 100vh; /* Make the terminal take up the whole webpage height so that if a user clicks anywhere on the webpage, the cursor becomes focused. */
-  margin: 3rem 3rem;
-  white-space: pre-line; /* Allows use of \n for line breaks. */
-}
-
-#terminal-title {
-  padding-bottom: 1rem;
-  font-size: 0.9rem;
-  white-space: pre-wrap; /* Preserves sequences of white space for proper ASCII art printing. */
-  color: var(--blue);
-  text-shadow: 0 0 4px var(--blue);
 }
 
 #gray-initial-terminal-output {
@@ -57,7 +45,7 @@ body {
   /* Additional styling. */
   margin-left: 1rem;
   flex-grow: 1;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-family: Menlo, "Hack", monospace;
   caret-color: var(--blue);
 }

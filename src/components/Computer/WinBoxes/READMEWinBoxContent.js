@@ -1,8 +1,6 @@
-import React, { Fragment } from "react";
-
 function READMEWinBoxContent() {
   return (
-    <Fragment>
+    <div className="text-file">
       <p>
         Welcome to <b>Computer World</b>!
       </p>
@@ -12,7 +10,7 @@ function READMEWinBoxContent() {
         which you interact with the various computer interfaces on this website.
       </p>
       <p>We hope you enjoy!</p>
-    </Fragment>
+    </div>
   );
 }
 

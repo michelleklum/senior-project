@@ -32,9 +32,8 @@
 }
 
 .wb-body {
-  padding: 0 0.5rem;
   color: var(--black);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* WinBox Image and Caption Styling */
@@ -50,4 +49,9 @@
 
 .img-right img {
   margin-left: 0.3rem;
+}
+
+/* WinBox Styling for Text File WinBoxes */
+.text-file {
+  padding: 0 0.6rem;
 }

@@ -1,8 +1,6 @@
-import React, { Fragment } from "react";
-
 function ErasureWinBoxContent() {
   return (
-    <Fragment>
+    <div className="text-file">
       <p>
         "The 'erased' word could persist and even multiply across other storage
         drives and devices. Erasure in that sense no longer nullifies;{" "}
@@ -13,7 +11,7 @@ function ErasureWinBoxContent() {
       <p>
         Dennis Tenen in <i>Plain Text: The Poetics of Computation</i>
       </p>
-    </Fragment>
+    </div>
   );
 }
 

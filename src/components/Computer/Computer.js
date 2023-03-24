@@ -1,3 +1,5 @@
+import "./Computer.css";
+
 import Toolbar from "./Toolbar/Toolbar";
 import Desktop from "./Desktop/Desktop";
 
