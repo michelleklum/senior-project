@@ -59,7 +59,7 @@ function SourcesWinBoxContent() {
   ];
 
   return (
-    <div className="grid" id="sources-winbox-content-grid">
+    <div className="custom-winbox-child grid" id="sources-winbox-content-grid">
       {sources.map(([sourceName, sourceIcon, sourceLink]) => (
         <Source
           key={sourceName}

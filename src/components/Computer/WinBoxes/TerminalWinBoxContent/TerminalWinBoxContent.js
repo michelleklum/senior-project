@@ -41,7 +41,11 @@ function TerminalWinBoxContent() {
   }
 
   return (
-    <div id="terminal" onClick={() => inputRef.current.focus()}>
+    <div
+      id="terminal"
+      className="custom-winbox-child"
+      onClick={() => inputRef.current.focus()}
+    >
       <TerminalInitialOutput
         isLastOutputPresent={isLastOutputPresent}
         inputRef={inputRef}

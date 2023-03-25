@@ -1,7 +1,6 @@
 #terminal {
   height: 100%; /* Make the terminal take up the whole WinBox height so that if a user clicks anywhere in the WinBox, the cursor becomes focused. */
   overflow: auto; /* Ensures any overflow content still has dark background, even as terminal input increases. */
-  padding: 0 0.5rem;
   white-space: pre-line; /* Allows use of \n for line breaks. */
 
   background-color: var(--black);

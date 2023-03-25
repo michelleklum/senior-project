@@ -1,6 +1,6 @@
 function ErasureWinBoxContent() {
   return (
-    <div className="text-file">
+    <div className="custom-winbox-child">
       <p>
         "The 'erased' word could persist and even multiply across other storage
         drives and devices. Erasure in that sense no longer nullifies;{" "}

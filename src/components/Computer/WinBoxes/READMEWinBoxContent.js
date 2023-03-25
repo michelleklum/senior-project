@@ -1,6 +1,6 @@
 function READMEWinBoxContent() {
   return (
-    <div className="text-file">
+    <div className="custom-winbox-child">
       <p>
         Welcome to <b>Computer World</b>!
       </p>

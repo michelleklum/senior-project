@@ -1,5 +1,5 @@
 function DialogueWinBoxContent() {
-  return <p>Hello!</p>;
+  return <div className="custom-winbox-child">Hello!</div>;
 }
 
 export default DialogueWinBoxContent;

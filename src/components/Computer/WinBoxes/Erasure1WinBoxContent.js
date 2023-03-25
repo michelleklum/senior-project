@@ -1,6 +1,6 @@
 function Erasure1WinBoxContent() {
   return (
-    <div className="text-file">
+    <div className="custom-winbox-child">
       <p>Women Computers:</p>
       <p>
         In the 1960s, when programming was seen as a menial job, and men found

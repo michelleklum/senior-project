@@ -1,5 +1,5 @@
 function TranslateWinBoxContent() {
-  return <p>Hi!</p>;
+  return <div className="custom-winbox-child">Hi!</div>;
 }
 
 export default TranslateWinBoxContent;
