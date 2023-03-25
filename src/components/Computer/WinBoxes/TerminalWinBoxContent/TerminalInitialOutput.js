@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 function TerminalInitialOutput(props) {
   const text =
-    'Initializing OS...\n\nLast login: Wed Dec 28 19:34:48 on ttys000\n\nType "help" to see a list of available commands.';
+    'Last login: Wed Dec 28 19:34:48 on ttys000\n\nType "help" to see a list of available commands.';
 
   const initialOutputRef = useRef();
 
