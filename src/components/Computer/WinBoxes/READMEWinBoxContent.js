@@ -2,14 +2,20 @@ function READMEWinBoxContent() {
   return (
     <div className="custom-winbox-child">
       <p>
-        Welcome to <b>Computer World</b>!
+        <b>This site is about humans and machines.</b>
       </p>
-      <p>This site is about humans and machines.</p>
+      <p>What is a computer?</p>
+      <p>AI vs. artificial communication</p>
+      <p>meaning-making metaphor machine</p>
       <p>
-        As you click around, please think, from time to time, about the ways in
-        which you interact with the various computer interfaces on this website.
+        lexicon: erasure, translation, and perhaps most importantly, dialogue.
       </p>
-      <p>We hope you enjoy!</p>
+      <p>
+        Along the way, you'll discover the mechanisms underlying our daily
+        interactions with our computers, from ___ to the bits hidden under the
+        hood of the GUI.
+      </p>
+      <p>Enjoy exploring!</p>
     </div>
   );
 }
