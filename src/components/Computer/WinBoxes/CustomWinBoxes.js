@@ -5,6 +5,7 @@ import SourcesWinBoxContent from "./SourcesWinBoxContent/SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent/TerminalWinBoxContent";
 import TranslateWinBoxContent from "./TranslateWinBoxContent/TranslateWinBoxContent";
 import DialogueWinBoxContent from "./DialogueWinBoxContent";
+import AcknowledgmentsWinBoxContent from "./AcknowledgmentsWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
 
@@ -15,6 +16,7 @@ import {
   TERMINAL,
   TRANSLATE,
   DIALOGUE,
+  ACKNOWLEDGMENTS,
   ERASURE,
   ERASURE1,
 } from "../../../winBoxes";
@@ -97,6 +99,17 @@ function CustomWinBoxes(props) {
       y: 40,
       children: <DialogueWinBoxContent />,
       headerColor: "#b5b4b4",
+    },
+    {
+      appName: ACKNOWLEDGMENTS,
+      innerRef: props.AcknowledgmentsWinBoxRef,
+      icon: textFile,
+      width: 620,
+      height: 610,
+      x: 600,
+      y: 20,
+      children: <AcknowledgmentsWinBoxContent />,
+      headerColor: "white",
     },
     {
       appName: ERASURE,

@@ -25,7 +25,11 @@ function AppFileIcon(props) {
         className={props.appFileName}
         alt={props.appFileName}
       />
-      <p>{props.appFileName}</p>
+      <p>
+        {props.appFileName.length > 9
+          ? props.appFileName.slice(0, 6) + "..."
+          : props.appFileName}
+      </p>
     </button>
   );
 }

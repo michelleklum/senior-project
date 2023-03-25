@@ -7,6 +7,7 @@ import {
   TERMINAL,
   TRANSLATE,
   DIALOGUE,
+  ACKNOWLEDGMENTS,
 } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
@@ -23,6 +24,7 @@ function DesktopAppsFiles(props) {
     [TERMINAL, terminal],
     [TRANSLATE, translate],
     [DIALOGUE, chat],
+    [ACKNOWLEDGMENTS, textFile],
   ];
 
   return (
