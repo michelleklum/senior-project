@@ -3,7 +3,7 @@ import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
 import SourcesWinBoxContent from "./SourcesWinBoxContent/SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent/TerminalWinBoxContent";
-import TranslateWinBoxContent from "./TranslateWinBoxContent";
+import TranslateWinBoxContent from "./TranslateWinBoxContent/TranslateWinBoxContent";
 import DialogueWinBoxContent from "./DialogueWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";

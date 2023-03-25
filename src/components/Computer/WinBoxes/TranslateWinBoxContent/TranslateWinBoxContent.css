@@ -1,0 +1,20 @@
+#language-select-row {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#custom-double-arrows {
+  background: url("../../icons/DoubleArrow.svg");
+  /* Must set size of SVG to see icon. */
+  width: 19.1963px;
+  height: 12.9624px;
+}
+
+#language-text-row {
+  margin-top: 1rem;
+  display: flex;
+  /* Flexbox gap should be 2 times gap of #language-select-row + width of double arrow icon. */
+  gap: calc(1.6rem + 19.1963px);
+}

@@ -5,11 +5,13 @@
 :root {
   --black: #282c34;
   --white: white;
+  --light-gray: #e6e6e6;
   --gray: #adadad;
   --dark-gray: #b5b4b4;
   --orange: #f79256;
   --blue: #61dafb;
   --light-blue: #b0ddea;
+  --translate-blue: #3399ff;
 }
 
 html {

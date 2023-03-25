@@ -1,0 +1,34 @@
+/* Override default styling for native HTML select element. */
+select {
+  font-family: Menlo, "Hack", monospace;
+  border: hidden;
+  outline: none;
+  appearance: none;
+  width: 100%;
+}
+
+/* Custom Language Select Styling. */
+#language-select {
+  flex-grow: 1; /* Make the element expand to fit the #language-select-row flexbox. */
+
+  height: 3rem;
+  padding: 0 1rem;
+
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+#language-select select {
+  color: var(--translate-blue);
+  font-weight: bold;
+}
+
+#custom-select-arrow {
+  background: url("../../icons/Arrow.svg");
+  /* Must set size of SVG to avoid seeing multiple arrows filling the #custom-select-arrow div. */
+  width: 13.7304px;
+  height: 7px;
+}
