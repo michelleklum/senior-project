@@ -111,7 +111,7 @@ function CustomWinBoxes(props) {
     {
       appName: ERASURE1,
       innerRef: props.Erasure1WinBoxRef,
-      width: 500,
+      width: 570,
       height: 600,
       x: 600,
       y: 50,

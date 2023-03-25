@@ -33,7 +33,9 @@ function Erasure1WinBoxContent() {
           French to English, Lovelace added annotations that resulted in a paper
           four times as long as the original. Her notes on the machine's
           operations outlined a new "science of operations" — which one might
-          reasonably call computer science.
+          reasonably call computer science. Lovelace's Note G, which detailed a
+          recursive algorithm for computing the Bernoulli numbers, is widely
+          considered to be the first computer program.
         </p>
         <img
           src={require("../img/AdaLovelace.png")}
