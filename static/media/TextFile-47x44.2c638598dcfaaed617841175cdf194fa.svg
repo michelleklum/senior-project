@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Text_File" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="47px" height="44px" viewBox="0 0 47 44" style="enable-background:new 0 0 47 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#61DAFB;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#61DAFB;}
+	.st3{fill:none;}
+	.st4{font-family:'Menlo-Bold';}
+	.st5{font-size:8.1951px;}
+</style>
+<g id="Text_File_Lines">
+	<polygon id="White_File_Content" class="st0" points="31.31,1 7.04,1 7.04,43 39.82,43 39.82,10.77 	"/>
+	<line class="st1" x1="11.21" y1="20.46" x2="35.79" y2="20.46"/>
+	<line class="st1" x1="11.21" y1="25.59" x2="35.79" y2="25.59"/>
+	<line class="st1" x1="11.21" y1="30.71" x2="35.79" y2="30.71"/>
+	<line class="st1" x1="11.21" y1="35.83" x2="35.79" y2="35.83"/>
+	<path id="File_Outline" class="st1" d="M32.35,1H8.41c-1,0-1.8,0.81-1.8,1.8V41.2c0,1,0.81,1.8,1.8,1.8h30.18c1,0,1.8-0.81,1.8-1.8
+		V10.46L32.35,1z"/>
+</g>
+<g id="TXT">
+	<rect x="11.21" y="6.12" class="st2" width="18.44" height="9.22"/>
+	<rect x="12.96" y="7.83" class="st3" width="14.94" height="6.49"/>
+	<text transform="matrix(1 0 0 1 12.9593 14.0537)" class="st0 st4 st5">TXT</text>
+</g>
+</svg>
