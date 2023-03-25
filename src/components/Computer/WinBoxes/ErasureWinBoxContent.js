@@ -9,7 +9,8 @@ function ErasureWinBoxContent() {
         thus ultimately entail wide-ranging political consequences."
       </p>
       <p>
-        Dennis Tenen in <i>Plain Text: The Poetics of Computation</i>
+        -- from page 14 of Dennis Tenen's{" "}
+        <i>Plain Text: The Poetics of Computation</i>
       </p>
     </div>
   );

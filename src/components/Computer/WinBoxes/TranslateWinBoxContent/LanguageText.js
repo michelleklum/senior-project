@@ -5,7 +5,7 @@ function LanguageText(props) {
   // eslint-disable-next-line default-case
   switch (props.lang) {
     case "Programmer's Vision":
-      text = "Let's write a program that does arithmetic on two variables!";
+      text = "Write a program that does arithmetic on two variables!";
       break;
     case "High-Level Code":
       text =
