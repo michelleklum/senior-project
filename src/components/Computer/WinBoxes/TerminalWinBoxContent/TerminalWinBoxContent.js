@@ -23,13 +23,12 @@ function TerminalWinBoxContent() {
     let newOutput = `guest@michelles-senior-project ~ % ${input}\n`;
     switch (input) {
       case "help":
-        newOutput +=
-          "Available commands: whoami terminal\n\n[whoami] meet terminal.\n";
+        newOutput += "Available commands: whoami\n\n[whoami] meet terminal.\n";
         break;
       case "whoami":
         // TODO
         newOutput +=
-          "Hello world! I am a computer terminal, otherwise known as a command line interface.\n\n[whoami] meet terminal.\n";
+          "Hello world! I am a computer terminal, otherwise known as a command line interface.\n";
         break;
       default:
         newOutput += `zsh: command not found: ${input}\n`;
