@@ -69,3 +69,9 @@ button {
   color: var(--black);
   text-decoration: none;
 }
+
+/* Global Text Paragraph Styling. */
+.text p {
+  text-align: justify;
+  text-justify: auto;
+}

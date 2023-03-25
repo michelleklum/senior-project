@@ -1,6 +1,6 @@
 function READMEWinBoxContent() {
   return (
-    <div className="custom-winbox-child">
+    <div className="custom-winbox-child text">
       <p>
         <b>This site is about humans and machines.</b>
       </p>

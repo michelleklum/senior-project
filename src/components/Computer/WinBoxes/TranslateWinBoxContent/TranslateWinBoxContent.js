@@ -28,7 +28,12 @@ function TranslateWinBoxContent() {
         <LanguageText lang={leftLang} />
         <LanguageText lang={rightLang} />
       </div>
-      <div>
+      <div className="text">
+        <p>
+          compilation, which is the three-step process of transforming source
+          code written by humans into a binary form of 1’s and 0’s interpretable
+          by machines
+        </p>
         <p>
           Steps to compile and run a program (how a program goes from a
           programmer's mind to something the computer can understand):
