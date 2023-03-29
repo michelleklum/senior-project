@@ -57,13 +57,11 @@ function READMEWinBoxContent() {
       <p>
         As you click through, you'll explore the throughline of computers as
         communication partners from present-day GUIs, all the way back to the
-        command line.
-      </p>
-      <p>
-        Along the way, you'll learn about the mechanisms underlying our daily
+        command line — while learning about the mechanisms underlying our daily
         interactions with our computers (i.e., the bits hidden under the GUI's
-        hood), while discovering a subset of my meaning-making computational
-        lexicon: erasure, translation, and perhaps most importantly, dialogue.
+        hood). Along the way, you'll also discover a subset of my meaning-making
+        computational lexicon: erasure, translation, and perhaps most
+        importantly, dialogue.
       </p>
     </div>
   );
