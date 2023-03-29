@@ -29,12 +29,12 @@ function AcknowledgmentsWinBoxContent() {
       </p>
       <p>
         Thank you to Tiffany Madruga and William La for paving the way for me
-        and other future Computer Science + Media Studies majors to come. Also,
-        thanks to Waverly Wang for doing this whole double major journey with
-        me, and for constantly inspiring me with her passion and talent for art,
-        and to Anshul Kamath for generously sharing his Media Studies course
-        readings (all of which, sadly, I have yet to read) with me as I was in
-        the process of formulating my thesis.
+        and other future Computer Science + Media Studies majors to come. Thank
+        you to Waverly Wang for doing this whole double major journey with me,
+        and for constantly inspiring me with her passion and talent for art.
+        Also, thanks to Anshul Kamath for generously sharing his Media Studies
+        course readings (all of which, sadly, I have yet to read) with me as I
+        was in the process of formulating my thesis.
       </p>
       <p>
         Shoutout to Neil Rhodes' Interaction Design course, Nancy Macko's
