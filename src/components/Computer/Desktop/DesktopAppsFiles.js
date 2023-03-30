@@ -16,19 +16,22 @@ import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
 import chat from "../icons/Chat-47x44.svg";
 
-function DesktopAppsFiles(props) {
-  const appsFiles = [
-    [README, textFile],
-    [TRASH, trash],
-    [SOURCES, folder],
-    [TERMINAL, terminal],
-    [TRANSLATE, translate],
-    [DIALOGUE, chat],
-    [ACKNOWLEDGMENTS, textFile],
-  ];
+export const DESKTOP_APPS_FILES = [
+  [README, textFile],
+  [TRASH, trash],
+  [SOURCES, folder],
+  [TERMINAL, terminal],
+  [TRANSLATE, translate],
+  [DIALOGUE, chat],
+  [ACKNOWLEDGMENTS, textFile],
+];
 
+function DesktopAppsFiles(props) {
   return (
-    <AppFileIconGrid appsFiles={appsFiles} winBoxRefs={props.winBoxRefs} />
+    <AppFileIconGrid
+      appsFiles={DESKTOP_APPS_FILES}
+      winBoxRefs={props.winBoxRefs}
+    />
   );
 }
 

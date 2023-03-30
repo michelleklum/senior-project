@@ -44,7 +44,9 @@ function AcknowledgmentsWinBoxContent() {
       </p>
       <p>
         And much appreciation goes to Lucas Bang for his interest in each and
-        every one of my adventures in Media Studies these past two years.
+        every one of my adventures in Media Studies these past two years, as
+        well as Avani Anne, Shivani Manivasagan, and my other Muddraker kids for
+        all your love and support.
       </p>
       <p>
         Finally, thank you to all my other friends and family who felt,

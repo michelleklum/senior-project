@@ -99,11 +99,28 @@ function TranslateWinBoxContent() {
           assembly code instruction "add a0,a1,a0".
         </p>
         <p>
-          But technical processes aside, the crucial first step is for the
-          programmer to translate the intention in their mind, along with all
-          prior knowledge, experience, and biases, into words and phrases. That
-          vision might start as pseudocode before eventually becoming high-level
-          source code.
+          Because machines cannot understand the high-level code a programmer
+          writes, or even the instruction-level assembly code that that
+          high-level code is compiled into, we see here that{" "}
+          <b>computers lack fundamental understanding</b>. Despite the metaphors
+          that attempt to abstract away the underlying bits, "all that you see
+          on your computer screen—your Tomb Raider, your digitized voice mail
+          messages, faxes, and word processing documents written in thirty-seven
+          different typefaces—is still, from the computer's point of view, just
+          like telegrams" (Stephenson 6).{" "}
+          <b>
+            To your machine, it's all still just Morse code: dots separated by
+            long dashes, pauses, and periods of silence.
+          </b>
+        </p>
+        <p>
+          <b>
+            But technical processes aside, the crucial first step is for the
+            programmer to translate the intention in their mind
+          </b>
+          , along with all prior knowledge, experience, and biases, into words
+          and phrases. That vision might start as pseudocode before eventually
+          becoming high-level source code.
         </p>
         <p>
           As Neal Stephenson recalls about his experience programming as a high

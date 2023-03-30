@@ -4,7 +4,7 @@ function TerminalPrompt(props) {
       <p>
         <span id="prompt-user">guest</span>
         <span id="prompt-at">@</span>
-        <span id="prompt-domain">michelles-senior-project</span> ~ %
+        <span id="prompt-domain">michelles-senior-project</span> desktop %
       </p>
       <input
         ref={props.inputRef}
