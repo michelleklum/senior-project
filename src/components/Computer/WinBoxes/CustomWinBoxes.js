@@ -4,7 +4,7 @@ import TrashWinBoxContent from "./TrashWinBoxContent";
 import SourcesWinBoxContent from "./SourcesWinBoxContent/SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent/TerminalWinBoxContent";
 import TranslateWinBoxContent from "./TranslateWinBoxContent/TranslateWinBoxContent";
-import DialogueWinBoxContent from "./DialogueWinBoxContent";
+import DialogueWinBoxContent from "./DialogueWinBoxContent/DialogueWinBoxContent";
 import AcknowledgmentsWinBoxContent from "./AcknowledgmentsWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
