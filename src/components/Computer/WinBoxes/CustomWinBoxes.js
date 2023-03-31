@@ -38,7 +38,7 @@ function CustomWinBoxes(props) {
       x: "center",
       y: 30,
       children: <READMEWinBoxContent />,
-      headerColor: "#b5b4b4",
+      headerColor: "white",
     },
     {
       appName: TRASH,
