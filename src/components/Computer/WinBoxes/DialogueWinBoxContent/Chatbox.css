@@ -1,7 +1,8 @@
 #chatbox {
   background-color: white;
   color: black;
-  height: 100%;
+  margin: 4rem 0;
+  height: 80vh;
   min-width: 400px;
   max-width: 500px;
   border-radius: 10px;
@@ -9,7 +10,7 @@
 }
 
 #messages {
-  height: 50%;
+  height: 55vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
