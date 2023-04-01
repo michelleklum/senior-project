@@ -105,9 +105,9 @@ function CustomWinBoxes(props) {
     {
       appName: DIALOGUE,
       innerRef: props.DialogueWinBoxRef,
-      noMin: true,
-      noMax: true,
-      noResize: true,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 400,
       height: 600,
       x: "right",
