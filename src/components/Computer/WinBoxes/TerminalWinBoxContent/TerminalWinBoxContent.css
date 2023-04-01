@@ -33,18 +33,8 @@
 }
 
 #terminal-input {
-  /* Remove default input styling. */
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  color: var(--white);
-
-  /* Additional styling. */
   margin-left: 1rem;
   flex-grow: 1;
-  font-size: 0.85rem;
-  font-family: Menlo, "Hack", monospace;
+  color: var(--white);
   caret-color: var(--blue);
 }

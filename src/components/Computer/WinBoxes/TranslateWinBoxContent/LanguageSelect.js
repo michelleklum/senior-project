@@ -33,7 +33,10 @@ function LanguageSelect(props) {
           Object Code
         </option>
       </select>
-      <div id="custom-select-arrow"></div>
+      <i
+        id="language-select-down-arrow"
+        className="fas fa-chevron-down fa-1x"
+      ></i>
     </div>
   );
 }

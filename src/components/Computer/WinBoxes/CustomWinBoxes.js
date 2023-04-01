@@ -25,14 +25,15 @@ import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-47x44.svg";
 import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
-import chat from "../icons/Chat-47x44.svg";
 
 function CustomWinBoxes(props) {
   const winBoxes = [
     {
       appName: README,
       innerRef: props.READMEWinBoxRef,
-      icon: textFile,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 550,
       height: 600,
       x: "center",
@@ -44,6 +45,9 @@ function CustomWinBoxes(props) {
       appName: TRASH,
       innerRef: props.TrashWinBoxRef,
       icon: trash,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 500,
       height: 350,
       x: 700,
@@ -60,6 +64,9 @@ function CustomWinBoxes(props) {
       appName: SOURCES,
       innerRef: props.SourcesWinBoxRef,
       icon: folder,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 470,
       height: 330,
       x: 800,
@@ -71,6 +78,9 @@ function CustomWinBoxes(props) {
       appName: TERMINAL,
       innerRef: props.TerminalWinBoxRef,
       icon: terminal,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 750,
       height: 395,
       x: 30,
@@ -82,6 +92,9 @@ function CustomWinBoxes(props) {
       appName: TRANSLATE,
       innerRef: props.TranslateWinBoxRef,
       icon: translate,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 700,
       height: 550,
       x: 120,
@@ -92,18 +105,23 @@ function CustomWinBoxes(props) {
     {
       appName: DIALOGUE,
       innerRef: props.DialogueWinBoxRef,
-      icon: chat,
-      width: 500,
+      noMin: true,
+      noMax: true,
+      noResize: true,
+      width: 400,
       height: 600,
-      x: 120,
-      y: 40,
+      x: "right",
+      y: "bottom",
       children: <DialogueWinBoxContent />,
-      headerColor: "#b5b4b4",
+      headerColor: "#6daffe",
     },
     {
       appName: ACKNOWLEDGMENTS,
       innerRef: props.AcknowledgmentsWinBoxRef,
       icon: textFile,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 620,
       height: 640,
       x: 600,
@@ -114,6 +132,9 @@ function CustomWinBoxes(props) {
     {
       appName: ERASURE,
       innerRef: props.ErasureWinBoxRef,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 500,
       height: 400,
       x: 170,
@@ -124,6 +145,9 @@ function CustomWinBoxes(props) {
     {
       appName: ERASURE1,
       innerRef: props.Erasure1WinBoxRef,
+      noMin: false,
+      noMax: false,
+      noResize: false,
       width: 570,
       height: 600,
       x: 600,
@@ -141,6 +165,9 @@ function CustomWinBoxes(props) {
           innerRef={winBox.innerRef}
           appName={winBox.appName}
           icon={winBox.icon}
+          noMin={winBox.noMin}
+          noMax={winBox.noMax}
+          noResize={winBox.noResize}
           width={winBox.width}
           height={winBox.height}
           x={winBox.x}

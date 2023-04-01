@@ -1,0 +1,17 @@
+#bot-icon-and-message {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#bot-icon {
+  color: var(--dialogue-dark-blue);
+  margin: 0.5rem 0;
+}
+
+#bot-message {
+  flex-grow: 1;
+  margin-right: 5rem;
+  background: var(--dialogue-dark-blue);
+  color: var(--white);
+}

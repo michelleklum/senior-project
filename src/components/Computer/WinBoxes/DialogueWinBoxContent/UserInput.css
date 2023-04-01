@@ -1,14 +1,19 @@
-#input-box {
-  padding-bottom: 1.5rem;
-  margin-left: 1rem;
+#user-input-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-.fa-chevron-circle-right {
-  color: #6daffe;
-  margin-right: 1rem;
+#user-input {
+  flex-grow: 1;
+  border-bottom: 0.75px solid var(--dialogue-dark-blue);
+}
+
+#user-input-arrow {
+  color: var(--dialogue-dark-blue);
   cursor: pointer;
 }
 
-.fa-chevron-circle-right:hover {
+#user-input-arrow:hover {
   transform: scale(1.05);
 }

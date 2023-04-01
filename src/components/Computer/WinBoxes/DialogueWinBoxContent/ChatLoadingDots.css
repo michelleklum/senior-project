@@ -1,17 +1,6 @@
-.bot-chat-icon {
-  color: #6daffe;
-  margin: 0.5rem 0;
-  margin-left: 1rem;
-}
-
 /* Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
 .spinner {
-  margin: 0.5rem 0;
-  margin-right: 5rem;
-  min-height: 2.5rem;
-  background: #6daffe;
-  border-radius: 5px;
-  padding: 0.5rem 0.5rem;
+  text-align: center;
 }
 
 .spinner > div {

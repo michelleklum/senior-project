@@ -26,9 +26,6 @@ select {
   font-weight: bold;
 }
 
-#custom-select-arrow {
-  background: url("../../icons/Arrow.svg");
-  /* Must set size of SVG to avoid seeing multiple arrows filling the #custom-select-arrow div. */
-  width: 13.7304px;
-  height: 7px;
+#language-select-down-arrow {
+  color: var(--translate-blue);
 }

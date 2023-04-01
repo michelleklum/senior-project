@@ -53,6 +53,9 @@ function CustomWinBox(props) {
       y={props.y}
       children={props.children}
       noFull={true}
+      noMin={props.noMin}
+      noMax={props.noMax}
+      noResize={props.noResize}
       background={props.headerColor}
     ></WinBox>
   );

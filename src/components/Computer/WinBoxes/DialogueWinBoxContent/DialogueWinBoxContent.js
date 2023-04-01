@@ -1,64 +1,67 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Chatbox from "./Chatbox";
 import Reply from "./Reply";
 
-class DialogueWinBoxContent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoading: false,
-      messages: [
+function DialogueWinBoxContent() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [messages, setMessages] = useState([
+    {
+      speaker: "bot",
+      text: "Hello! I'm a chatbot powered by ChatGPT. What do you want to talk about today?",
+    },
+  ]);
+
+  // Add new user input to messages array in state.
+  function submitUserInput(userInput) {
+    setMessages([
+      ...messages,
+      {
+        speaker: "user",
+        text: userInput,
+      },
+    ]);
+  }
+
+  // After component renders (which happens if a new User Message or Robot Message is added to the DOM),
+  // if the last message was a User Message,
+  // call the asynchronous getChatbotResponse function to get the best response to that last message.
+  useEffect(() => {
+    let lastMessage = messages.at(-1);
+    if (lastMessage["speaker"] === "user") {
+      getChatbotResponse(lastMessage["text"]);
+    }
+  });
+
+  // The asynchronous getChatbotResponse function
+  // uses the Reply module to get the chatbot's response to some user input.
+  async function getChatbotResponse(userInput) {
+    // Set isLoading to true to display the bouncing dots ChatLoading component.
+    setIsLoading(true);
+
+    await Reply.getChatbotResponse(userInput).then(function (botResponse) {
+      // Set isLoading to false to stop displaying the bouncing dots ChatLoading component.
+      setIsLoading(false);
+
+      // Add new chatbot response to messages array in state.
+      setMessages([
+        ...messages,
         {
           speaker: "bot",
-          text: "Hello! I'm a coronavirus chatbot. Ask me any questions you have about COVID-19.",
+          text: botResponse,
         },
-      ],
-    };
-    this.getChatbotResponse = this.getChatbotResponse.bind(this);
-    this.submitUserInput = this.submitUserInput.bind(this);
-  }
-
-  // add user input to messages array in state
-  // call asynchronous getChatbotResponse function to get best response to user input using Reply module logic
-  submitUserInput(userInput) {
-    let messages = this.state.messages;
-    messages.push({
-      speaker: "user",
-      text: userInput,
-    });
-
-    this.setState({ messages: messages });
-
-    this.getChatbotResponse(userInput);
-  }
-
-  // use Reply module to get chatbot response to user input
-  // add chatbot response to messages array in state
-  async getChatbotResponse(userInput) {
-    // set isLoading to true in state to display chatLoading dots
-    this.setState({ isLoading: true });
-
-    let messages = this.state.messages;
-    await Reply.getChatbotResponse(userInput).then((botResponse) => {
-      messages.push({
-        speaker: "bot",
-        text: botResponse,
-      });
-
-      this.setState({ isLoading: false, messages: messages });
+      ]);
     });
   }
-  render() {
-    return (
-      <div className="custom-winbox-child">
-        <Chatbox
-          messages={this.state.messages}
-          submitUserInput={this.submitUserInput}
-          isLoading={this.state.isLoading}
-        />
-      </div>
-    );
-  }
+
+  return (
+    <div className="custom-winbox-child">
+      <Chatbox
+        messages={messages}
+        submitUserInput={submitUserInput}
+        isLoading={isLoading}
+      />
+    </div>
+  );
 }
 
 export default DialogueWinBoxContent;

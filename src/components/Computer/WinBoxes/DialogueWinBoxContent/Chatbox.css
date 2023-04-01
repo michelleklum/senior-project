@@ -1,16 +1,24 @@
 #chatbox {
-  background-color: white;
-  color: black;
-  margin: 4rem 0;
-  height: 80vh;
-  min-width: 400px;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #messages {
-  height: 55vh;
+  flex-grow: 1;
   overflow-y: scroll;
   overflow-x: hidden;
+  border-bottom: 2px solid var(--dialogue-dark-blue);
+}
+
+/* Common class used by RobotIconMessage and UserMessage. */
+.message {
+  min-height: 1rem;
+  width: 70%;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  text-align: left;
+  overflow-wrap: break-word; /* Break up long words so they remain inside message box. */
 }

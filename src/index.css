@@ -12,6 +12,8 @@
   --blue: #61dafb;
   --light-blue: #b0ddea;
   --translate-blue: #3399ff;
+  --dialogue-dark-blue: #6daffe;
+  --dialogue-light-blue: #edf6ff;
 }
 
 html {
@@ -36,6 +38,17 @@ button {
   width: 100%;
   background: none;
   outline: none;
+}
+
+/* Override default styling for native HTML input. */
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 0.85rem;
+  font-family: Menlo, "Hack", monospace;
 }
 
 /* Global Icon Grid Styling. Applies to AppFileIconGrid and SourcesWinBoxContent */
