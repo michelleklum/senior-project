@@ -14,6 +14,7 @@ function Desktop() {
   const AcknowledgmentsWinBoxRef = useRef();
   const ErasureWinBoxRef = useRef();
   const Erasure1WinBoxRef = useRef();
+  const Erasure2WinBoxRef = useRef();
 
   return (
     <div id="desktop">
@@ -38,6 +39,7 @@ function Desktop() {
         AcknowledgmentsWinBoxRef={AcknowledgmentsWinBoxRef}
         ErasureWinBoxRef={ErasureWinBoxRef}
         Erasure1WinBoxRef={Erasure1WinBoxRef}
+        Erasure2WinBoxRef={Erasure2WinBoxRef}
       />
     </div>
   );

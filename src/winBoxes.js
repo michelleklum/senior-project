@@ -7,3 +7,4 @@ export const DIALOGUE = "DIALOGUE";
 export const ACKNOWLEDGMENTS = "ACKNOWLEDGMENTS";
 export const ERASURE = "ERASURE";
 export const ERASURE1 = "ERASURE1";
+export const ERASURE2 = "ERASURE2";

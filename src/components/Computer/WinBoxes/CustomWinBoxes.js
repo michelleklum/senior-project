@@ -8,6 +8,7 @@ import DialogueWinBoxContent from "./DialogueWinBoxContent/DialogueWinBoxContent
 import AcknowledgmentsWinBoxContent from "./AcknowledgmentsWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
+import Erasure2WinBoxContent from "./Erasure2WinBoxContent";
 
 import {
   README,
@@ -19,6 +20,7 @@ import {
   ACKNOWLEDGMENTS,
   ERASURE,
   ERASURE1,
+  ERASURE2,
 } from "../../../winBoxes";
 import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-47x44.svg";
@@ -55,6 +57,7 @@ function CustomWinBoxes(props) {
         <TrashWinBoxContent
           ErasureWinBoxRef={props.ErasureWinBoxRef}
           Erasure1WinBoxRef={props.Erasure1WinBoxRef}
+          Erasure2WinBoxRef={props.Erasure2WinBoxRef}
         />
       ),
       headerColor: "#b5b4b4",
@@ -151,6 +154,19 @@ function CustomWinBoxes(props) {
       x: 600,
       y: 50,
       children: <Erasure1WinBoxContent />,
+      headerColor: "white",
+    },
+    {
+      appName: ERASURE2,
+      innerRef: props.Erasure2WinBoxRef,
+      noMin: false,
+      noMax: false,
+      noResize: false,
+      width: 670,
+      height: 340,
+      x: 100,
+      y: 5,
+      children: <Erasure2WinBoxContent />,
       headerColor: "white",
     },
   ];
