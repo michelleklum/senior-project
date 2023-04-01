@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/senior-project/static/css/main.03c7e5b0.css",
-    "main.js": "/senior-project/static/js/main.1012c85b.js",
+    "main.css": "/senior-project/static/css/main.73854fc3.css",
+    "main.js": "/senior-project/static/js/main.a718bedc.js",
     "static/js/787.e6b8966f.chunk.js": "/senior-project/static/js/787.e6b8966f.chunk.js",
     "static/media/AdaLovelace.png": "/senior-project/static/media/AdaLovelace.86b534fe6fb0f37fdc9e.png",
     "static/media/WomenComputersEniac.png": "/senior-project/static/media/WomenComputersEniac.4e5ede37cab92f99b4f3.png",
     "static/media/Translate-47x44.svg": "/senior-project/static/media/Translate-47x44.20da74e587c60795f55642da22f3c412.svg",
     "static/media/LinkEarthMouse-47x44.svg": "/senior-project/static/media/LinkEarthMouse-47x44.65ab52ece75918c9d92c3f01656071bb.svg",
     "static/media/Trash-47x44.svg": "/senior-project/static/media/Trash-47x44.3c6d1a97bc9285b4ca3d7aa8240567b8.svg",
-    "static/media/Chat-47x44.svg": "/senior-project/static/media/Chat-47x44.ea3b1633745ac40d8644bdb3336b3d6f.svg",
+    "static/media/Chat-47x44.svg": "/senior-project/static/media/Chat-47x44.1186d878496089e3a60ca17aa17d0322.svg",
     "static/media/Book-47x44.svg": "/senior-project/static/media/Book-47x44.56a107b51f52484e8964396724b82bf7.svg",
     "static/media/Folder-47x44.svg": "/senior-project/static/media/Folder-47x44.20ce2909c8056bc20f0994adb18b2162.svg",
     "static/media/Terminal-47x44.svg": "/senior-project/static/media/Terminal-47x44.e216b83f9d693c858acf59ee60428469.svg",
     "static/media/TextFile-47x44.svg": "/senior-project/static/media/TextFile-47x44.2c638598dcfaaed617841175cdf194fa.svg",
     "index.html": "/senior-project/index.html",
-    "static/media/DoubleArrow.svg": "/senior-project/static/media/DoubleArrow.0c2057e68090d3131ead.svg",
-    "static/media/Arrow.svg": "/senior-project/static/media/Arrow.935ee0ea07d442287baa.svg",
-    "main.03c7e5b0.css.map": "/senior-project/static/css/main.03c7e5b0.css.map",
-    "main.1012c85b.js.map": "/senior-project/static/js/main.1012c85b.js.map",
+    "main.73854fc3.css.map": "/senior-project/static/css/main.73854fc3.css.map",
+    "main.a718bedc.js.map": "/senior-project/static/js/main.a718bedc.js.map",
     "787.e6b8966f.chunk.js.map": "/senior-project/static/js/787.e6b8966f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03c7e5b0.css",
-    "static/js/main.1012c85b.js"
+    "static/css/main.73854fc3.css",
+    "static/js/main.a718bedc.js"
   ]
 }
