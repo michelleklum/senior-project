@@ -42,8 +42,8 @@ function READMEWinBoxContent() {
         understanding of the ways in which humans interact with digital devices.
         But because a computer does not and <em>cannot</em> understand the data
         that it transmits, its metaphor is incomplete without a human on the
-        receiving end. In this mode of communication, there is no meaning
-        without humanity.
+        receiving end. In this mode of communication, there is no meaning in the
+        absence of humanity.
       </p>
       <p>
         <b>
