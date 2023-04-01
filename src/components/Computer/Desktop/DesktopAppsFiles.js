@@ -5,7 +5,7 @@ import {
   TRASH,
   SOURCES,
   TERMINAL,
-  TRANSLATE,
+  TRANSLATION,
   DIALOGUE,
   ACKNOWLEDGMENTS,
 } from "../../../winBoxes";
@@ -21,7 +21,7 @@ export const DESKTOP_APPS_FILES = [
   [TRASH, trash],
   [SOURCES, folder],
   [TERMINAL, terminal],
-  [TRANSLATE, translate],
+  [TRANSLATION, translate],
   [DIALOGUE, chat],
   [ACKNOWLEDGMENTS, textFile],
 ];

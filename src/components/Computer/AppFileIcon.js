@@ -26,8 +26,8 @@ function AppFileIcon(props) {
         alt={props.appFileName}
       />
       <p>
-        {props.appFileName.length > 9
-          ? props.appFileName.slice(0, 6) + "..."
+        {props.appFileName.length > 11
+          ? props.appFileName.slice(0, 7) + "..."
           : props.appFileName}
       </p>
     </button>

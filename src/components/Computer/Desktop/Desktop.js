@@ -23,7 +23,7 @@ function Desktop() {
           TRASH: TrashWinBoxRef,
           SOURCES: SourcesWinBoxRef,
           TERMINAL: TerminalWinBoxRef,
-          TRANSLATE: TranslateWinBoxRef,
+          TRANSLATION: TranslateWinBoxRef,
           DIALOGUE: DialogueWinBoxRef,
           ACKNOWLEDGMENTS: AcknowledgmentsWinBoxRef,
         }}

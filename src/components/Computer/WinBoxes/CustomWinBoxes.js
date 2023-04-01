@@ -14,13 +14,12 @@ import {
   TRASH,
   SOURCES,
   TERMINAL,
-  TRANSLATE,
+  TRANSLATION,
   DIALOGUE,
   ACKNOWLEDGMENTS,
   ERASURE,
   ERASURE1,
 } from "../../../winBoxes";
-import textFile from "../icons/TextFile-47x44.svg";
 import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-47x44.svg";
 import terminal from "../icons/Terminal-47x44.svg";
@@ -86,10 +85,10 @@ function CustomWinBoxes(props) {
       x: 30,
       y: 200,
       children: <TerminalWinBoxContent />,
-      headerColor: "#b5b4b4",
+      headerColor: "#282c34",
     },
     {
-      appName: TRANSLATE,
+      appName: TRANSLATION,
       innerRef: props.TranslateWinBoxRef,
       icon: translate,
       noMin: false,
@@ -118,7 +117,6 @@ function CustomWinBoxes(props) {
     {
       appName: ACKNOWLEDGMENTS,
       innerRef: props.AcknowledgmentsWinBoxRef,
-      icon: textFile,
       noMin: false,
       noMax: false,
       noResize: false,

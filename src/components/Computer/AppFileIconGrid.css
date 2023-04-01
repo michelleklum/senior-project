@@ -1,5 +1,5 @@
 /* App and File Icon Grid Styling */
 #app-file-icon-grid {
-  grid-template-columns: 68px 68px 68px;
+  grid-template-columns: 74px 74px 74px;
   grid-template-rows: 82px 82px 82px 82px 82px 82px 82px 82px 82px;
 }
