@@ -7,7 +7,9 @@ function DialogueWinBoxContent() {
   const [messages, setMessages] = useState([
     {
       speaker: "bot",
-      text: "Hello! I'm a chatbot powered by ChatGPT. What do you want to talk about today?",
+      text:
+        "Meet our new chatbot, powered by ChatGPT and TensorFlow.js - providing personalized responses and helping with your queries.\n\n" +
+        'Feel free to ask me any of the following questions: "What is a computer?", "What is ChatGPT?", "What is TensorFlow.js?", and "Why is dialogue important?". I\'d be happy to help!',
     },
   ]);
 

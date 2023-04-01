@@ -7,6 +7,7 @@
 #user-input {
   flex-grow: 1;
   border-bottom: 0.75px solid var(--dialogue-dark-blue);
+  caret-color: var(--dialogue-dark-blue);
 }
 
 #user-input-arrow {

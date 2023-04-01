@@ -23,8 +23,14 @@ function TerminalWinBoxContent() {
   // as well as the terminal input element for entering new input.
   useEffect(() => inputRef.current.scrollIntoView(), [olderOutput]);
 
-  // Need WinBox states to display running processes for the Terminal's top command.
+  // Once the component is rendered, focus on the input element.
   const winBoxStates = useSelector(selectWinBoxStates);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, [winBoxStates]);
+
+  // Also need WinBox states to display running processes for the Terminal's top command.
   const openWinBoxes = Object.entries(winBoxStates).filter(
     ([_, v]) => v === OPEN
   );

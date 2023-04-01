@@ -1,7 +1,7 @@
 #bot-icon-and-message {
   display: flex;
   gap: 0.5rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #bot-icon {
@@ -11,7 +11,7 @@
 
 #bot-message {
   flex-grow: 1;
-  margin-right: 5rem;
+  margin-right: 3rem;
   background: var(--dialogue-dark-blue);
   color: var(--white);
 }

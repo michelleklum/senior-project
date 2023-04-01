@@ -7,6 +7,9 @@ import UserMessage from "./UserMessage";
 import ChatLoading from "./ChatLoading";
 import UserInput from "./UserInput";
 
+import { useSelector } from "react-redux";
+import { selectWinBoxStates } from "../../../../slices/winBoxSlice";
+
 function Chatbox(props) {
   // When new messages are added, chatbox should automatically scroll to bottom (to show most recent message).
   const messagesRef = useRef();
@@ -15,6 +18,14 @@ function Chatbox(props) {
     let el = messagesRef.current;
     el.scrollTop = el.scrollHeight;
   });
+
+  // Once the component is rendered, focus on the input element.
+  const winBoxStates = useSelector(selectWinBoxStates);
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, [winBoxStates]);
 
   return (
     <div id="chatbox">
@@ -34,7 +45,7 @@ function Chatbox(props) {
         })}
         {props.isLoading && <ChatLoading />}
       </div>
-      <UserInput submitUserInput={props.submitUserInput} />
+      <UserInput inputRef={inputRef} submitUserInput={props.submitUserInput} />
     </div>
   );
 }

@@ -17,7 +17,10 @@ function TranslateWinBoxContent() {
           setLang={setLeftLang}
           otherLang={rightLang}
         />
-        <i id="language-select-double-arrows" class="fas fa-exchange-alt"></i>
+        <i
+          id="language-select-double-arrows"
+          className="fas fa-exchange-alt"
+        ></i>
         <LanguageSelect
           lang={rightLang}
           setLang={setRightLang}

@@ -24,14 +24,16 @@ function UserInput(props) {
   return (
     <div id="user-input-box" onSubmit={submitUserInput}>
       <input
+        ref={props.inputRef}
         type="text"
-        name="user-input"
         id="user-input"
-        placeholder="chat with me!"
+        name="user-input"
+        aria-label="Dialogue window user input"
+        placeholder="Chat with me!"
+        autoComplete="off"
+        value={userInput}
         onChange={handleChange}
         onKeyDown={handleOnKeyDown}
-        value={userInput}
-        autocomplete="off"
       ></input>
       <i
         id="user-input-arrow"
