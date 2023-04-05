@@ -1,11 +1,11 @@
 /* Manages state regarding the user's current page. */
 import { createSlice } from "@reduxjs/toolkit";
-import { TERMINAL } from "./pageStates";
+import { COMPUTER } from "./pageStates";
 
 export const pageSlice = createSlice({
   name: "page",
   initialState: {
-    value: TERMINAL,
+    value: COMPUTER,
   },
   reducers: {
     changePage: (state, action) => {
