@@ -47,14 +47,14 @@ function TerminalWinBoxContent() {
           "[ls]     list files and directories.\n" +
           "[pwd]    print working directory.\n" +
           "[top]    display running processes and CPU usage.\n" +
-          "[whoami] meet terminal.";
+          "[whoami] meet terminal.\n";
         break;
       case "ls":
         // Display all apps and files on the desktop.
         newOutput += DESKTOP_APPS_FILES.map(([k, _]) => `${k}\n`).join("");
         break;
       case "pwd":
-        newOutput += "/Users/guest/desktop";
+        newOutput += "/Users/guest/desktop\n";
         break;
       case "top":
         newOutput +=
