@@ -7,6 +7,7 @@ import {
   TERMINAL,
   TRANSLATION,
   DIALOGUE,
+  INSPIRATION,
   ACKNOWLEDGMENTS,
 } from "../../../winBoxes";
 import textFile from "../icons/TextFile-47x44.svg";
@@ -23,6 +24,7 @@ export const DESKTOP_APPS_FILES = [
   [TERMINAL, terminal],
   [TRANSLATION, translate],
   [DIALOGUE, chat],
+  [INSPIRATION, folder],
   [ACKNOWLEDGMENTS, textFile],
 ];
 

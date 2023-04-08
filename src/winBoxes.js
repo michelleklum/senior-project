@@ -4,6 +4,7 @@ export const SOURCES = "SOURCES";
 export const TERMINAL = "TERMINAL";
 export const TRANSLATION = "TRANSLATION";
 export const DIALOGUE = "DIALOGUE";
+export const INSPIRATION = "INSPIRATION";
 export const ACKNOWLEDGMENTS = "ACKNOWLEDGMENTS";
 export const ERASURE = "ERASURE";
 export const ERASURE1 = "ERASURE1";

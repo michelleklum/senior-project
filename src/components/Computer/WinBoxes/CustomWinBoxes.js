@@ -1,10 +1,11 @@
 import CustomWinBox from "./CustomWinBox";
 import READMEWinBoxContent from "./READMEWinBoxContent";
 import TrashWinBoxContent from "./TrashWinBoxContent";
-import SourcesWinBoxContent from "./SourcesWinBoxContent/SourcesWinBoxContent";
+import SourcesWinBoxContent from "./SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent/TerminalWinBoxContent";
 import TranslateWinBoxContent from "./TranslateWinBoxContent/TranslateWinBoxContent";
 import DialogueWinBoxContent from "./DialogueWinBoxContent/DialogueWinBoxContent";
+import InspirationWinBoxContent from "./InspirationWinBoxContent";
 import AcknowledgmentsWinBoxContent from "./AcknowledgmentsWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
 import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
@@ -18,6 +19,7 @@ import {
   TERMINAL,
   TRANSLATION,
   DIALOGUE,
+  INSPIRATION,
   ACKNOWLEDGMENTS,
   ERASURE,
   ERASURE1,
@@ -125,6 +127,21 @@ function CustomWinBoxes(props) {
       y: "bottom",
       children: <DialogueWinBoxContent />,
       headerColor: "#6daffe",
+    },
+    {
+      appName: INSPIRATION,
+      innerRef: props.InspirationWinBoxRef,
+      icon: folder,
+      noMin: false,
+      noMax: false,
+      noClose: false,
+      noResize: false,
+      width: 470,
+      height: 330,
+      x: 50,
+      y: 212,
+      children: <InspirationWinBoxContent />,
+      headerColor: "#b5b4b4",
     },
     {
       appName: ACKNOWLEDGMENTS,

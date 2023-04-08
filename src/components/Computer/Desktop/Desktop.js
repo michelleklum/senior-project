@@ -11,6 +11,7 @@ function Desktop() {
   const TerminalWinBoxRef = useRef();
   const TranslateWinBoxRef = useRef();
   const DialogueWinBoxRef = useRef();
+  const InspirationWinBoxRef = useRef();
   const AcknowledgmentsWinBoxRef = useRef();
   const ErasureWinBoxRef = useRef();
   const Erasure1WinBoxRef = useRef();
@@ -27,6 +28,7 @@ function Desktop() {
           TERMINAL: TerminalWinBoxRef,
           TRANSLATION: TranslateWinBoxRef,
           DIALOGUE: DialogueWinBoxRef,
+          INSPIRATION: InspirationWinBoxRef,
           ACKNOWLEDGMENTS: AcknowledgmentsWinBoxRef,
         }}
       />
@@ -37,6 +39,7 @@ function Desktop() {
         TerminalWinBoxRef={TerminalWinBoxRef}
         TranslateWinBoxRef={TranslateWinBoxRef}
         DialogueWinBoxRef={DialogueWinBoxRef}
+        InspirationWinBoxRef={InspirationWinBoxRef}
         AcknowledgmentsWinBoxRef={AcknowledgmentsWinBoxRef}
         ErasureWinBoxRef={ErasureWinBoxRef}
         Erasure1WinBoxRef={Erasure1WinBoxRef}

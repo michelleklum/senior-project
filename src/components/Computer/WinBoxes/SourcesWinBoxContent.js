@@ -1,8 +1,7 @@
-import "./SourcesWinBoxContent.css";
-import Source from "./Source";
+import SourcesInspoGrid from "./SourcesInspoGrid/SourcesInspoGrid";
 
-import book from "../../icons/Book-47x44.svg";
-import linkEarthMouse from "../../icons/LinkEarthMouse-47x44.svg";
+import book from "../icons/Book-47x44.svg";
+import linkEarthMouse from "../icons/LinkEarthMouse-47x44.svg";
 
 function SourcesWinBoxContent() {
   const sources = [
@@ -58,18 +57,7 @@ function SourcesWinBoxContent() {
     ],
   ];
 
-  return (
-    <div className="custom-winbox-child grid" id="sources-winbox-content-grid">
-      {sources.map(([sourceName, sourceIcon, sourceLink]) => (
-        <Source
-          key={sourceName}
-          name={sourceName}
-          icon={sourceIcon}
-          link={sourceLink}
-        />
-      ))}
-    </div>
-  );
+  return <SourcesInspoGrid type="sources" links={sources} />;
 }
 
 export default SourcesWinBoxContent;

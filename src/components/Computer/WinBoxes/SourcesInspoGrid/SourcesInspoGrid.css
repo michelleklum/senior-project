@@ -1,0 +1,12 @@
+/* Sources / Inspiration Link Grid Styling */
+.sources-inspo-grid {
+  grid-template-columns: 85px 85px 85px 85px 85px;
+}
+
+#sources-grid {
+  grid-template-rows: 87px 87px 87px;
+}
+
+#inspo-grid {
+  grid-template-rows: 77px;
+}

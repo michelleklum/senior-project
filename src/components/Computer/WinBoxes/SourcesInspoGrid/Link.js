@@ -1,4 +1,4 @@
-function Source(props) {
+function Link(props) {
   return (
     <a className="grid-icon" href={props.link} target="_blank" rel="noreferrer">
       <img src={props.icon} className={props.name} alt={props.name} />
@@ -7,4 +7,4 @@ function Source(props) {
   );
 }
 
-export default Source;
+export default Link;
