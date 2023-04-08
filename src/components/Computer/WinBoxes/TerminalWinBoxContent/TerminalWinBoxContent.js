@@ -69,9 +69,13 @@ function TerminalWinBoxContent() {
 
         // Display running processes. There will be one running process per open WinBox.
         if (openWinBoxes.length > 0) newOutput += "PID    COMMAND\n";
+        let randStartPID = Math.floor(Math.random() * 30000);
         newOutput += openWinBoxes
           .map(
-            ([k, _], i) => `${i}${" ".repeat(7 - i.toString().length)}${k}\n`
+            ([k, _], i) =>
+              `${randStartPID + 100 * i + i}${" ".repeat(
+                7 - (randStartPID + 100 * i + i).toString().length
+              )}${k}\n`
           )
           .join("");
         break;
