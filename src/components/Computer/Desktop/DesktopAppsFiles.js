@@ -19,11 +19,11 @@ import chat from "../icons/Chat-47x44.svg";
 
 export const DESKTOP_APPS_FILES = [
   [README, textFile],
-  [TRASH, trash],
-  [SOURCES, folder],
   [TERMINAL, terminal],
   [TRANSLATION, translate],
   [DIALOGUE, chat],
+  [TRASH, trash],
+  [SOURCES, folder],
   [INSPIRATION, folder],
   [ACKNOWLEDGMENTS, textFile],
 ];
