@@ -10,26 +10,7 @@
   text-align: center;
 }
 
-.ok-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
+#warning-ok-button {
   height: 2.5rem;
   width: 40%;
-
-  border: 1.5px solid var(--black);
-  color: var(--black);
-
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: -0.3px;
-
-  cursor: pointer;
-
-  transition: all 0.5s;
-}
-
-.ok-button:hover {
-  box-shadow: inset 5em 3em gold;
 }

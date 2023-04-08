@@ -37,7 +37,7 @@ function CustomWinBox(props) {
   };
 
   const blackFontClassName =
-    props.headerColor === "white" ? "custom-winbox-black-font" : null;
+    props.headerFontColor === "dark" ? "custom-winbox-black-font" : null;
 
   return (
     <WinBox

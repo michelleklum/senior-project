@@ -7,6 +7,7 @@ import {
   TERMINAL,
   TRANSLATION,
   DIALOGUE,
+  INSCRIPTION,
   INSPIRATION,
   ACKNOWLEDGMENTS,
 } from "../../../winBoxes";
@@ -16,12 +17,14 @@ import folder from "../icons/Folder-47x44.svg";
 import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
 import chat from "../icons/Chat-47x44.svg";
+import memo from "../icons/Memo-47x44.svg";
 
 export const DESKTOP_APPS_FILES = [
   [README, textFile],
   [TERMINAL, terminal],
   [TRANSLATION, translate],
   [DIALOGUE, chat],
+  [INSCRIPTION, memo],
   [TRASH, trash],
   [SOURCES, folder],
   [INSPIRATION, folder],

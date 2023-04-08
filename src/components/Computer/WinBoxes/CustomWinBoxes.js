@@ -5,6 +5,7 @@ import SourcesWinBoxContent from "./SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent/TerminalWinBoxContent";
 import TranslateWinBoxContent from "./TranslateWinBoxContent/TranslateWinBoxContent";
 import DialogueWinBoxContent from "./DialogueWinBoxContent/DialogueWinBoxContent";
+import InscriptionWinBoxContent from "./InscriptionWinBoxContent/InscriptionWinBoxContent";
 import InspirationWinBoxContent from "./InspirationWinBoxContent";
 import AcknowledgmentsWinBoxContent from "./AcknowledgmentsWinBoxContent";
 import ErasureWinBoxContent from "./ErasureWinBoxContent";
@@ -19,6 +20,7 @@ import {
   TERMINAL,
   TRANSLATION,
   DIALOGUE,
+  INSCRIPTION,
   INSPIRATION,
   ACKNOWLEDGMENTS,
   ERASURE,
@@ -46,6 +48,7 @@ function CustomWinBoxes(props) {
       y: 30,
       children: <READMEWinBoxContent />,
       headerColor: "white",
+      headerFontColor: "dark",
     },
     {
       appName: TRASH,
@@ -129,6 +132,21 @@ function CustomWinBoxes(props) {
       headerColor: "#6daffe",
     },
     {
+      appName: INSCRIPTION,
+      innerRef: props.InscriptionWinBoxRef,
+      noMin: false,
+      noMax: false,
+      noClose: false,
+      noResize: false,
+      width: 800,
+      height: 600,
+      x: 80,
+      y: 30,
+      children: <InscriptionWinBoxContent />,
+      headerColor: "#f4cf34",
+      headerFontColor: "dark",
+    },
+    {
       appName: INSPIRATION,
       innerRef: props.InspirationWinBoxRef,
       icon: folder,
@@ -156,6 +174,7 @@ function CustomWinBoxes(props) {
       y: 10,
       children: <AcknowledgmentsWinBoxContent />,
       headerColor: "white",
+      headerFontColor: "dark",
     },
     {
       appName: ERASURE,
@@ -170,6 +189,7 @@ function CustomWinBoxes(props) {
       y: 60,
       children: <ErasureWinBoxContent />,
       headerColor: "white",
+      headerFontColor: "dark",
     },
     {
       appName: ERASURE1,
@@ -184,6 +204,7 @@ function CustomWinBoxes(props) {
       y: 50,
       children: <Erasure1WinBoxContent />,
       headerColor: "white",
+      headerFontColor: "dark",
     },
     {
       appName: ERASURE2,
@@ -198,6 +219,7 @@ function CustomWinBoxes(props) {
       y: 5,
       children: <Erasure2WinBoxContent />,
       headerColor: "white",
+      headerFontColor: "dark",
     },
     {
       appName: HAL9000,
@@ -230,6 +252,7 @@ function CustomWinBoxes(props) {
           y={winBox.y}
           children={winBox.children}
           headerColor={winBox.headerColor}
+          headerFontColor={winBox.headerFontColor}
         />
       ))}
     </div>

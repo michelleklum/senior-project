@@ -30,7 +30,6 @@ body {
 
 /* Override default styling for native HTML buttons. */
 button {
-  font-family: Menlo, "Hack", monospace;
   color: var(--white);
   padding: 0;
   margin: 0;
@@ -38,6 +37,29 @@ button {
   width: 100%;
   background: none;
   outline: none;
+  font-family: Menlo, "Hack", monospace;
+}
+
+/* Custom button styling for this website. */
+.custom-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1.5px solid var(--black);
+  color: var(--black);
+
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+
+  cursor: pointer;
+
+  transition: all 0.5s;
+}
+
+.custom-button:hover {
+  box-shadow: inset 5em 3em gold;
 }
 
 /* Override default styling for native HTML input. */
@@ -49,6 +71,20 @@ input {
   background-color: transparent;
   font-size: 0.85rem;
   font-family: Menlo, "Hack", monospace;
+}
+
+/* Override default styling for native HTML textarea. */
+textarea {
+  border: none;
+  resize: none; /* Removes ability for user to click and drag to resize textarea. */
+  overflow: hidden; /* Hides textarea scrollbar. */
+  font-family: Menlo, "Hack", monospace;
+}
+
+textarea:hover,
+textarea:focus,
+textarea:active {
+  outline: none;
 }
 
 /* Global Icon Grid Styling. Applies to AppFileIconGrid and SourcesWinBoxContent */

@@ -16,7 +16,11 @@ function HAL9000WinBoxContent(props) {
     <div id="hal-9000-winbox-content" className="custom-winbox-child">
       <img src={warning} alt="Warning Icon" />
       <p>Photo can't be opened because it's in the Trash.</p>
-      <button className="ok-button" onClick={handleClick}>
+      <button
+        id="warning-ok-button"
+        className="custom-button"
+        onClick={handleClick}
+      >
         <p>OK</p>
       </button>
     </div>

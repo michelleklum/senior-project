@@ -44,6 +44,11 @@ function SourcesWinBoxContent() {
       book,
       "https://www.proquest.com/docview/215738582",
     ],
+    [
+      "THE INTERFACE EFFECT",
+      book,
+      "https://www.wiley.com/en-us/The+Interface+Effect-p-9780745662527",
+    ],
     ["THE MET... REALITY", book, "https://academic.oup.com/book/3660"],
     [
       "WEB 101 ...THE GUI",

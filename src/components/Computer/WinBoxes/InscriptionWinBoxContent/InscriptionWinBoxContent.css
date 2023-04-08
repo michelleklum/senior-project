@@ -1,0 +1,61 @@
+#inscription {
+  height: 100%;
+  display: flex;
+  white-space: pre-wrap; /* Allows use of \n for line breaks, as well as spaces. */
+}
+
+#notes-sidebar {
+  width: 15rem;
+  padding-right: 0.75rem;
+  border-right: 0.75px solid var(--gray);
+}
+
+#all-notes {
+  height: 88%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 0.4rem;
+}
+
+.note-preview-button {
+  text-align: left;
+  color: var(--black);
+  margin: 0.25rem 0;
+  padding: 0 0.5rem;
+  border-bottom: 0.75px solid var(--gray);
+}
+
+.note-title-preview {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.note-date-content-preview {
+  display: flex;
+  justify-content: space-between;
+}
+
+#selected-note {
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  border: none;
+}
+
+#add-note-button {
+  height: 2rem;
+}
+
+#curr-note {
+  max-height: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  padding-top: 0.75rem;
+  padding-left: 0.75rem;
+
+  flex-grow: 1;
+}
+
+#curr-note textarea {
+  width: 100%;
+}
