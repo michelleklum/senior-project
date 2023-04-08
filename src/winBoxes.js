@@ -8,3 +8,4 @@ export const ACKNOWLEDGMENTS = "ACKNOWLEDGMENTS";
 export const ERASURE = "ERASURE";
 export const ERASURE1 = "ERASURE1";
 export const ERASURE2 = "ERASURE2";
+export const HAL9000 = "HAL9000.JPG";

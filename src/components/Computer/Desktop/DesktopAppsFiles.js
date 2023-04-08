@@ -29,6 +29,7 @@ export const DESKTOP_APPS_FILES = [
 function DesktopAppsFiles(props) {
   return (
     <AppFileIconGrid
+      type="desktop"
       appsFiles={DESKTOP_APPS_FILES}
       winBoxRefs={props.winBoxRefs}
     />

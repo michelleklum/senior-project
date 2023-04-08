@@ -1,5 +1,14 @@
 /* App and File Icon Grid Styling */
-#app-file-icon-grid {
-  grid-template-columns: 74px 74px 74px;
+.app-file-icon-grid {
   grid-template-rows: 82px 82px 82px 82px 82px 82px 82px 82px 82px;
+}
+
+/* Desktop Grid Styling */
+#desktop-grid {
+  grid-template-columns: 74px 74px 74px;
+}
+
+/* Trash WinBox Grid Styling */
+#trash-winbox-grid {
+  grid-template-columns: 85px 85px 85px 85px 85px;
 }

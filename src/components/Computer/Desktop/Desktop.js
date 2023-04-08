@@ -15,6 +15,7 @@ function Desktop() {
   const ErasureWinBoxRef = useRef();
   const Erasure1WinBoxRef = useRef();
   const Erasure2WinBoxRef = useRef();
+  const HAL9000WinBoxRef = useRef();
 
   return (
     <div id="desktop">
@@ -40,6 +41,7 @@ function Desktop() {
         ErasureWinBoxRef={ErasureWinBoxRef}
         Erasure1WinBoxRef={Erasure1WinBoxRef}
         Erasure2WinBoxRef={Erasure2WinBoxRef}
+        HAL9000WinBoxRef={HAL9000WinBoxRef}
       />
     </div>
   );

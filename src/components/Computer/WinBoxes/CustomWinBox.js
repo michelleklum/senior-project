@@ -45,6 +45,7 @@ function CustomWinBox(props) {
       ref={props.innerRef}
       hide={winBoxStates[props.appName] === CLOSED}
       onclose={handleClose}
+      noHeader={props.noHeader}
       icon={props.icon}
       title={props.appName}
       width={props.width}
@@ -55,6 +56,7 @@ function CustomWinBox(props) {
       noFull={true}
       noMin={props.noMin}
       noMax={props.noMax}
+      noClose={props.noClose}
       noResize={props.noResize}
       background={props.headerColor}
     ></WinBox>
