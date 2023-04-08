@@ -110,7 +110,7 @@ function CustomWinBoxes(props) {
       x: 120,
       y: 42,
       children: <TranslateWinBoxContent />,
-      headerColor: "#b5b4b4",
+      headerColor: "#6daffe",
     },
     {
       appName: DIALOGUE,
