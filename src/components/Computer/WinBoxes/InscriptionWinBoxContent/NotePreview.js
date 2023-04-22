@@ -50,8 +50,8 @@ function NotePreview(props) {
         <p>{getDisplayDate(props.date)}</p>
         <p>
           {props.content
-            ? props.content.length > 15
-              ? props.content.slice(0, 14) + "..."
+            ? props.content.length > 16
+              ? props.content.slice(0, 15) + "..."
               : props.content
             : "No additional text"}
         </p>
