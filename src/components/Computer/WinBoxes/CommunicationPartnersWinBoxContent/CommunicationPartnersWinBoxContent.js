@@ -4,6 +4,7 @@ import {
   COMMUNICATION_HISTORY,
   PUNCH_CARD,
   TELETYPE,
+  IBM2260,
   TEKTRONIX,
 } from "../../../../winBoxes";
 import textFile from "../../icons/TextFile-47x44.svg";
@@ -14,6 +15,7 @@ function CommunicationPartnersWinBoxContent(props) {
     [COMMUNICATION_HISTORY, textFile],
     [PUNCH_CARD, jpg],
     [TELETYPE, jpg],
+    [IBM2260, jpg],
     [TEKTRONIX, jpg],
   ];
 
@@ -26,6 +28,7 @@ function CommunicationPartnersWinBoxContent(props) {
           "A HISTORY OF COMMUNICATION": props.CommunicationHistoryWinBoxRef,
           "PUNCHCARD.JPG": props.PunchCardWinBoxRef,
           "TELETYPE.JPG": props.TeletypeWinBoxRef,
+          "IBM2260.JPG": props.IBM2260WinBoxRef,
           "TEKTRONIX.JPG": props.TektronixWinBoxRef,
         }}
       />

@@ -15,4 +15,5 @@ export const HAL9000 = "HAL9000.JPG";
 export const COMMUNICATION_HISTORY = "A HISTORY OF COMMUNICATION";
 export const PUNCH_CARD = "PUNCHCARD.JPG";
 export const TELETYPE = "TELETYPE.JPG";
+export const IBM2260 = "IBM2260.JPG";
 export const TEKTRONIX = "TEKTRONIX.JPG";

@@ -4,3 +4,7 @@
   overflow: auto; /* Ensures any overflow content still has gray background even as you scroll through it. */
   white-space: pre-wrap; /* Allows use of \n for line breaks, as well as spaces. */
 }
+
+#jpg-winbox-content p {
+  text-align: justify;
+}

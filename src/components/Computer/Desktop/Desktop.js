@@ -22,6 +22,7 @@ function Desktop() {
   const CommunicationHistoryWinBoxRef = useRef();
   const PunchCardWinBoxRef = useRef();
   const TeletypeWinBoxRef = useRef();
+  const IBM2260WinBoxRef = useRef();
   const TektronixWinBoxRef = useRef();
 
   return (
@@ -58,6 +59,7 @@ function Desktop() {
         CommunicationHistoryWinBoxRef={CommunicationHistoryWinBoxRef}
         PunchCardWinBoxRef={PunchCardWinBoxRef}
         TeletypeWinBoxRef={TeletypeWinBoxRef}
+        IBM2260WinBoxRef={IBM2260WinBoxRef}
         TektronixWinBoxRef={TektronixWinBoxRef}
       />
     </div>
