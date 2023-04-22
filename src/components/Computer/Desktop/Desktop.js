@@ -9,6 +9,7 @@ function Desktop() {
   const TrashWinBoxRef = useRef();
   const SourcesWinBoxRef = useRef();
   const TerminalWinBoxRef = useRef();
+  const CommunicationPartnersWinBoxRef = useRef();
   const TranslateWinBoxRef = useRef();
   const DialogueWinBoxRef = useRef();
   const InscriptionWinBoxRef = useRef();
@@ -18,6 +19,9 @@ function Desktop() {
   const Erasure1WinBoxRef = useRef();
   const Erasure2WinBoxRef = useRef();
   const HAL9000WinBoxRef = useRef();
+  const CommunicationHistoryWinBoxRef = useRef();
+  const PunchCardWinBoxRef = useRef();
+  const TeletypeWinBoxRef = useRef();
 
   return (
     <div id="desktop">
@@ -27,6 +31,7 @@ function Desktop() {
           TRASH: TrashWinBoxRef,
           SOURCES: SourcesWinBoxRef,
           TERMINAL: TerminalWinBoxRef,
+          "COMMUNICATION PARTNERS": CommunicationPartnersWinBoxRef,
           TRANSLATION: TranslateWinBoxRef,
           DIALOGUE: DialogueWinBoxRef,
           INSCRIPTION: InscriptionWinBoxRef,
@@ -39,6 +44,7 @@ function Desktop() {
         TrashWinBoxRef={TrashWinBoxRef}
         SourcesWinBoxRef={SourcesWinBoxRef}
         TerminalWinBoxRef={TerminalWinBoxRef}
+        CommunicationPartnersWinBoxRef={CommunicationPartnersWinBoxRef}
         TranslateWinBoxRef={TranslateWinBoxRef}
         DialogueWinBoxRef={DialogueWinBoxRef}
         InscriptionWinBoxRef={InscriptionWinBoxRef}
@@ -48,6 +54,9 @@ function Desktop() {
         Erasure1WinBoxRef={Erasure1WinBoxRef}
         Erasure2WinBoxRef={Erasure2WinBoxRef}
         HAL9000WinBoxRef={HAL9000WinBoxRef}
+        CommunicationHistoryWinBoxRef={CommunicationHistoryWinBoxRef}
+        PunchCardWinBoxRef={PunchCardWinBoxRef}
+        TeletypeWinBoxRef={TeletypeWinBoxRef}
       />
     </div>
   );

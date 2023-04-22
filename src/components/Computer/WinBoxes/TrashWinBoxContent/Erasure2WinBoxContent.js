@@ -34,7 +34,7 @@ function Erasure2WinBoxContent() {
         </p>
 
         <img
-          src={require("../img/JoyMITMediaLabMaskBlackAndWhite.jpeg")}
+          src={require("../../img/JoyMITMediaLabMaskBlackAndWhite.jpeg")}
           alt="Joy Buolamwini holding a white mask"
           width="35%"
         />

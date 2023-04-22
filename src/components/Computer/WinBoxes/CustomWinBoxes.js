@@ -1,23 +1,28 @@
 import CustomWinBox from "./CustomWinBox";
 import READMEWinBoxContent from "./READMEWinBoxContent";
-import TrashWinBoxContent from "./TrashWinBoxContent";
+import TrashWinBoxContent from "./TrashWinBoxContent/TrashWinBoxContent";
 import SourcesWinBoxContent from "./SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent/TerminalWinBoxContent";
+import CommunicationPartnersWinBoxContent from "./CommunicationPartnersWinBoxContent/CommunicationPartnersWinBoxContent";
 import TranslateWinBoxContent from "./TranslateWinBoxContent/TranslateWinBoxContent";
 import DialogueWinBoxContent from "./DialogueWinBoxContent/DialogueWinBoxContent";
 import InscriptionWinBoxContent from "./InscriptionWinBoxContent/InscriptionWinBoxContent";
 import InspirationWinBoxContent from "./InspirationWinBoxContent";
 import AcknowledgmentsWinBoxContent from "./AcknowledgmentsWinBoxContent";
-import ErasureWinBoxContent from "./ErasureWinBoxContent";
-import Erasure1WinBoxContent from "./Erasure1WinBoxContent";
-import Erasure2WinBoxContent from "./Erasure2WinBoxContent";
-import HAL9000WinBoxContent from "./HAL9000WinBoxContent";
+import ErasureWinBoxContent from "./TrashWinBoxContent/ErasureWinBoxContent";
+import Erasure1WinBoxContent from "./TrashWinBoxContent/Erasure1WinBoxContent";
+import Erasure2WinBoxContent from "./TrashWinBoxContent/Erasure2WinBoxContent";
+import CommunicationHistoryWinBoxContent from "./CommunicationPartnersWinBoxContent/CommunicationHistoryWinBoxContent";
+import HAL9000WinBoxContent from "./TrashWinBoxContent/HAL9000WinBoxContent";
+import PunchCardWinBoxContent from "./CommunicationPartnersWinBoxContent/PunchCardWinBoxContent";
+import TeletypeWinBoxContent from "./CommunicationPartnersWinBoxContent/TeletypeWinBoxContent";
 
 import {
   README,
   TRASH,
   SOURCES,
   TERMINAL,
+  COMMUNICATION_PARTNERS,
   TRANSLATION,
   DIALOGUE,
   INSCRIPTION,
@@ -27,9 +32,10 @@ import {
   ERASURE1,
   ERASURE2,
   HAL9000,
+  COMMUNICATION_HISTORY,
+  PUNCH_CARD,
+  TELETYPE,
 } from "../../../winBoxes";
-import trash from "../icons/Trash-47x44.svg";
-import folder from "../icons/Folder-47x44.svg";
 import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
 
@@ -38,14 +44,10 @@ function CustomWinBoxes(props) {
     {
       appName: README,
       innerRef: props.READMEWinBoxRef,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 550,
-      height: 600,
+      height: 595,
       x: "center",
-      y: 30,
+      y: 40,
       children: <READMEWinBoxContent />,
       headerColor: "white",
       headerFontColor: "dark",
@@ -53,11 +55,6 @@ function CustomWinBoxes(props) {
     {
       appName: TRASH,
       innerRef: props.TrashWinBoxRef,
-      icon: trash,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 500,
       height: 350,
       x: 700,
@@ -70,31 +67,24 @@ function CustomWinBoxes(props) {
           HAL9000WinBoxRef={props.HAL9000WinBoxRef}
         />
       ),
-      headerColor: "#b5b4b4",
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
     },
     {
       appName: SOURCES,
       innerRef: props.SourcesWinBoxRef,
-      icon: folder,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 470,
       height: 330,
       x: 800,
       y: 145,
       children: <SourcesWinBoxContent />,
-      headerColor: "#b5b4b4",
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
     },
     {
       appName: TERMINAL,
       innerRef: props.TerminalWinBoxRef,
       icon: terminal,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 750,
       height: 395,
       x: 30,
@@ -103,13 +93,26 @@ function CustomWinBoxes(props) {
       headerColor: "#282c34",
     },
     {
+      appName: COMMUNICATION_PARTNERS,
+      innerRef: props.CommunicationPartnersWinBoxRef,
+      width: 470,
+      height: 330,
+      x: 275,
+      y: 67,
+      children: (
+        <CommunicationPartnersWinBoxContent
+          CommunicationHistoryWinBoxRef={props.CommunicationHistoryWinBoxRef}
+          PunchCardWinBoxRef={props.PunchCardWinBoxRef}
+          TeletypeWinBoxRef={props.TeletypeWinBoxRef}
+        />
+      ),
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
+    },
+    {
       appName: TRANSLATION,
       innerRef: props.TranslateWinBoxRef,
       icon: translate,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 700,
       height: 550,
       x: 120,
@@ -120,10 +123,6 @@ function CustomWinBoxes(props) {
     {
       appName: DIALOGUE,
       innerRef: props.DialogueWinBoxRef,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 400,
       height: 600,
       x: "right",
@@ -134,10 +133,6 @@ function CustomWinBoxes(props) {
     {
       appName: INSCRIPTION,
       innerRef: props.InscriptionWinBoxRef,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 800,
       height: 600,
       x: 80,
@@ -149,25 +144,17 @@ function CustomWinBoxes(props) {
     {
       appName: INSPIRATION,
       innerRef: props.InspirationWinBoxRef,
-      icon: folder,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 470,
       height: 330,
       x: 50,
       y: 212,
       children: <InspirationWinBoxContent />,
-      headerColor: "#b5b4b4",
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
     },
     {
       appName: ACKNOWLEDGMENTS,
       innerRef: props.AcknowledgmentsWinBoxRef,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 620,
       height: 640,
       x: 600,
@@ -179,10 +166,6 @@ function CustomWinBoxes(props) {
     {
       appName: ERASURE,
       innerRef: props.ErasureWinBoxRef,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 500,
       height: 400,
       x: 170,
@@ -194,10 +177,6 @@ function CustomWinBoxes(props) {
     {
       appName: ERASURE1,
       innerRef: props.Erasure1WinBoxRef,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 570,
       height: 600,
       x: 600,
@@ -209,10 +188,6 @@ function CustomWinBoxes(props) {
     {
       appName: ERASURE2,
       innerRef: props.Erasure2WinBoxRef,
-      noMin: false,
-      noMax: false,
-      noClose: false,
-      noResize: false,
       width: 670,
       height: 340,
       x: 100,
@@ -230,6 +205,39 @@ function CustomWinBoxes(props) {
       x: "center",
       y: "center",
       children: <HAL9000WinBoxContent appStr="HAL9000.JPG" />,
+    },
+    {
+      appName: COMMUNICATION_HISTORY,
+      innerRef: props.CommunicationHistoryWinBoxRef,
+      width: 530,
+      height: 235,
+      x: 500,
+      y: "center",
+      children: <CommunicationHistoryWinBoxContent />,
+      headerColor: "white",
+      headerFontColor: "dark",
+    },
+    {
+      appName: PUNCH_CARD,
+      innerRef: props.PunchCardWinBoxRef,
+      width: 550,
+      height: 355,
+      x: 170,
+      y: 300,
+      children: <PunchCardWinBoxContent />,
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
+    },
+    {
+      appName: TELETYPE,
+      innerRef: props.TeletypeWinBoxRef,
+      width: 550,
+      height: 700,
+      x: "right",
+      y: 0,
+      children: <TeletypeWinBoxContent />,
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
     },
   ];
 

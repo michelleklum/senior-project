@@ -1,9 +1,9 @@
 import "./HAL9000WinBoxContent.css";
 
 import { useDispatch } from "react-redux";
-import { closeWinBox } from "../../../slices/winBoxSlice";
+import { closeWinBox } from "../../../../slices/winBoxSlice";
 
-import warning from "../icons/Warning-47x44.svg";
+import warning from "../../icons/Warning-47x44.svg";
 
 function HAL9000WinBoxContent(props) {
   const dispatch = useDispatch();

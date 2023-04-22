@@ -9,7 +9,7 @@ function DialogueWinBoxContent() {
       speaker: "bot",
       text:
         "Meet our new chatbot, powered by ChatGPT and TensorFlow.js - providing personalized responses and helping with your queries.\n\n" +
-        'Feel free to ask me any of the following questions: "What is a computer?", and "What\'s the difference between a computer and a human?". I\'d be happy to help!',
+        'Feel free to ask me any of the following questions: "What is a computer?", and "What\'s the difference between a computer and a human?"\n\nI\'d be happy to help!',
     },
   ]);
 

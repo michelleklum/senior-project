@@ -35,7 +35,7 @@ function NotePreview(props) {
   return (
     <button
       key={props.id}
-      id={props.id === props.currNoteId && "selected-note"}
+      id={props.id === props.currNoteId ? "selected-note" : undefined}
       className="note-preview-button"
       onClick={() => props.setCurrNoteId(props.id)}
     >

@@ -5,7 +5,7 @@ function AppFileIconGrid(props) {
   return (
     <div
       className="grid app-file-icon-grid"
-      id={props.type === "desktop" ? "desktop-grid" : "trash-winbox-grid"}
+      id={props.type === "desktop" ? "desktop-grid" : "other-winbox-grid"}
     >
       {props.appsFiles.map(([appFileName, icon]) => (
         <AppFileIcon

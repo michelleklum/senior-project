@@ -1,7 +1,7 @@
 /* Import for the font Hack. */
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hack.min.css");
 
-/* Define custom properties for colors. */
+/* Define custom properties for colors and font. */
 :root {
   --black: #282c34;
   --white: white;
@@ -14,6 +14,7 @@
   --translate-blue: #3399ff;
   --dialogue-dark-blue: #6daffe;
   --dialogue-light-blue: #edf6ff;
+  --font: "Hack";
 }
 
 html {
@@ -23,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Menlo, "Hack", monospace;
+  font-family: var(--font), "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,7 +38,7 @@ button {
   width: 100%;
   background: none;
   outline: none;
-  font-family: Menlo, "Hack", monospace;
+  font-family: var(--font), "Courier New", monospace;
 }
 
 /* Custom button styling for this website. */
@@ -70,7 +71,7 @@ input {
   padding: 0;
   background-color: transparent;
   font-size: 0.85rem;
-  font-family: Menlo, "Hack", monospace;
+  font-family: var(--font), "Courier New", monospace;
 }
 
 /* Override default styling for native HTML textarea. */
@@ -78,7 +79,7 @@ textarea {
   border: none;
   resize: none; /* Removes ability for user to click and drag to resize textarea. */
   overflow: hidden; /* Hides textarea scrollbar. */
-  font-family: Menlo, "Hack", monospace;
+  font-family: var(--font), "Courier New", monospace;
 }
 
 textarea:hover,

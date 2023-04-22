@@ -1,0 +1,5 @@
+#jpg-winbox-content {
+  background: var(--light-gray);
+  height: 100%; /* Make the JPGWinBoxContent take up the whole WinBox height so that the background is gray all the way through. */
+  overflow: auto; /* Ensures any overflow content still has gray background even as you scroll through it. */
+}

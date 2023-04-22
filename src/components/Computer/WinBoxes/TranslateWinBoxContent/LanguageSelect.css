@@ -1,6 +1,6 @@
 /* Override default styling for native HTML select element. */
 select {
-  font-family: Menlo, "Hack", monospace;
+  font-family: var(--font), "Courier New", monospace !important;
   border: hidden;
   outline: none;
   appearance: none;

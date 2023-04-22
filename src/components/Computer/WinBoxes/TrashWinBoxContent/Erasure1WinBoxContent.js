@@ -13,7 +13,7 @@ function Erasure1WinBoxContent() {
       </p>
       <div className="img">
         <img
-          src={require("../img/WomenComputersEniac.png")}
+          src={require("../../img/WomenComputersEniac.png")}
           alt="Women computers at the Eniac"
           width="100%"
         />
@@ -38,7 +38,7 @@ function Erasure1WinBoxContent() {
           considered to be the first computer program.
         </p>
         <img
-          src={require("../img/AdaLovelace.png")}
+          src={require("../../img/AdaLovelace.png")}
           alt="An engraving of Ada Lovelace"
           width="40%"
         />

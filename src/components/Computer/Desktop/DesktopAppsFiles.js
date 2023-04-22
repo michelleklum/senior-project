@@ -5,6 +5,7 @@ import {
   TRASH,
   SOURCES,
   TERMINAL,
+  COMMUNICATION_PARTNERS,
   TRANSLATION,
   DIALOGUE,
   INSCRIPTION,
@@ -22,6 +23,7 @@ import memo from "../icons/Memo-47x44.svg";
 export const DESKTOP_APPS_FILES = [
   [README, textFile],
   [TERMINAL, terminal],
+  [COMMUNICATION_PARTNERS, folder],
   [TRANSLATION, translate],
   [DIALOGUE, chat],
   [INSCRIPTION, memo],
