@@ -22,6 +22,7 @@ function Desktop() {
   const CommunicationHistoryWinBoxRef = useRef();
   const PunchCardWinBoxRef = useRef();
   const TeletypeWinBoxRef = useRef();
+  const TektronixWinBoxRef = useRef();
 
   return (
     <div id="desktop">
@@ -57,6 +58,7 @@ function Desktop() {
         CommunicationHistoryWinBoxRef={CommunicationHistoryWinBoxRef}
         PunchCardWinBoxRef={PunchCardWinBoxRef}
         TeletypeWinBoxRef={TeletypeWinBoxRef}
+        TektronixWinBoxRef={TektronixWinBoxRef}
       />
     </div>
   );

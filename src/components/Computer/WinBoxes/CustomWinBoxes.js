@@ -16,6 +16,7 @@ import CommunicationHistoryWinBoxContent from "./CommunicationPartnersWinBoxCont
 import HAL9000WinBoxContent from "./TrashWinBoxContent/HAL9000WinBoxContent";
 import PunchCardWinBoxContent from "./CommunicationPartnersWinBoxContent/PunchCardWinBoxContent";
 import TeletypeWinBoxContent from "./CommunicationPartnersWinBoxContent/TeletypeWinBoxContent";
+import TektronixWinBoxContent from "./CommunicationPartnersWinBoxContent/TektronixWinBoxContent";
 
 import {
   README,
@@ -35,6 +36,7 @@ import {
   COMMUNICATION_HISTORY,
   PUNCH_CARD,
   TELETYPE,
+  TEKTRONIX,
 } from "../../../winBoxes";
 import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
@@ -104,6 +106,7 @@ function CustomWinBoxes(props) {
           CommunicationHistoryWinBoxRef={props.CommunicationHistoryWinBoxRef}
           PunchCardWinBoxRef={props.PunchCardWinBoxRef}
           TeletypeWinBoxRef={props.TeletypeWinBoxRef}
+          TektronixWinBoxRef={props.TektronixWinBoxRef}
         />
       ),
       headerColor: "#e6e6e6",
@@ -231,11 +234,22 @@ function CustomWinBoxes(props) {
     {
       appName: TELETYPE,
       innerRef: props.TeletypeWinBoxRef,
-      width: 550,
+      width: 500,
       height: 700,
       x: "right",
       y: 0,
       children: <TeletypeWinBoxContent />,
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
+    },
+    {
+      appName: TEKTRONIX,
+      innerRef: props.TektronixWinBoxRef,
+      width: 495,
+      height: 685,
+      x: "center",
+      y: 0,
+      children: <TektronixWinBoxContent />,
       headerColor: "#e6e6e6",
       headerFontColor: "dark",
     },
