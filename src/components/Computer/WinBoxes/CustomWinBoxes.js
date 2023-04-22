@@ -16,8 +16,9 @@ import CommunicationHistoryWinBoxContent from "./CommunicationPartnersWinBoxCont
 import HAL9000WinBoxContent from "./TrashWinBoxContent/HAL9000WinBoxContent";
 import PunchCardWinBoxContent from "./CommunicationPartnersWinBoxContent/PunchCardWinBoxContent";
 import TeletypeWinBoxContent from "./CommunicationPartnersWinBoxContent/TeletypeWinBoxContent";
-import TektronixWinBoxContent from "./CommunicationPartnersWinBoxContent/TektronixWinBoxContent";
 import IBM2260WinBoxContent from "./CommunicationPartnersWinBoxContent/IBM2260WinBoxContent";
+import TektronixWinBoxContent from "./CommunicationPartnersWinBoxContent/TektronixWinBoxContent";
+import CommandLineInterfaceWinBoxContent from "./CommunicationPartnersWinBoxContent/CommandLineInterfaceWinBoxContent";
 
 import {
   README,
@@ -39,6 +40,7 @@ import {
   TELETYPE,
   IBM2260,
   TEKTRONIX,
+  COMMAND_LINE_INTERFACE,
 } from "../../../winBoxes";
 import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
@@ -110,6 +112,7 @@ function CustomWinBoxes(props) {
           TeletypeWinBoxRef={props.TeletypeWinBoxRef}
           IBM2260WinBoxRef={props.IBM2260WinBoxRef}
           TektronixWinBoxRef={props.TektronixWinBoxRef}
+          CommandLineInterfaceWinBoxRef={props.CommandLineInterfaceWinBoxRef}
         />
       ),
       headerColor: "#e6e6e6",
@@ -264,6 +267,17 @@ function CustomWinBoxes(props) {
       x: "center",
       y: 0,
       children: <TektronixWinBoxContent />,
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
+    },
+    {
+      appName: COMMAND_LINE_INTERFACE,
+      innerRef: props.CommandLineInterfaceWinBoxRef,
+      width: 510,
+      height: 480,
+      x: 300,
+      y: 150,
+      children: <CommandLineInterfaceWinBoxContent />,
       headerColor: "#e6e6e6",
       headerFontColor: "dark",
     },

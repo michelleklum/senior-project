@@ -24,6 +24,7 @@ function Desktop() {
   const TeletypeWinBoxRef = useRef();
   const IBM2260WinBoxRef = useRef();
   const TektronixWinBoxRef = useRef();
+  const CommandLineInterfaceWinBoxRef = useRef();
 
   return (
     <div id="desktop">
@@ -61,6 +62,7 @@ function Desktop() {
         TeletypeWinBoxRef={TeletypeWinBoxRef}
         IBM2260WinBoxRef={IBM2260WinBoxRef}
         TektronixWinBoxRef={TektronixWinBoxRef}
+        CommandLineInterfaceWinBoxRef={CommandLineInterfaceWinBoxRef}
       />
     </div>
   );

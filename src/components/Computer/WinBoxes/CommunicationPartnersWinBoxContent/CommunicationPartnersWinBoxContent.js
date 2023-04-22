@@ -6,6 +6,7 @@ import {
   TELETYPE,
   IBM2260,
   TEKTRONIX,
+  COMMAND_LINE_INTERFACE,
 } from "../../../../winBoxes";
 import textFile from "../../icons/TextFile-47x44.svg";
 import jpg from "../../icons/JPG-47x44.svg";
@@ -17,6 +18,7 @@ function CommunicationPartnersWinBoxContent(props) {
     [TELETYPE, jpg],
     [IBM2260, jpg],
     [TEKTRONIX, jpg],
+    [COMMAND_LINE_INTERFACE, jpg],
   ];
 
   return (
@@ -30,6 +32,7 @@ function CommunicationPartnersWinBoxContent(props) {
           "TELETYPE.JPG": props.TeletypeWinBoxRef,
           "IBM2260.JPG": props.IBM2260WinBoxRef,
           "TEKTRONIX.JPG": props.TektronixWinBoxRef,
+          "COMMAND LINE INTERFACE.JPG": props.CommandLineInterfaceWinBoxRef,
         }}
       />
     </div>
