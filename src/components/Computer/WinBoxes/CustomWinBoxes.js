@@ -139,8 +139,8 @@ function CustomWinBoxes(props) {
       x: 40,
       y: 70,
       children: <InspectionWinBoxContent />,
-      headerColor: "#e6e6e6",
-      headerFontColor: "dark",
+      headerColor: "#4a4aa0",
+      headerFontColor: "white",
     },
     {
       appName: DIALOGUE,

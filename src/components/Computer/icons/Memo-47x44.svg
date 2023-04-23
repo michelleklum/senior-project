@@ -4,14 +4,14 @@
 	 width="47px" height="44px" viewBox="0 0 47 44" style="enable-background:new 0 0 47 44;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:none;stroke:#49AA9C;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:#49AA9C;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#90C7C3;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#90C7C3;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
 <g id="Text_File_Lines">
 	<polygon id="White_File_Content" class="st0" points="31.3,1 7,1 7,43 39.8,43 39.8,10.8 	"/>
 	<line class="st1" x1="11.1" y1="28.2" x2="35.7" y2="28.2"/>
 	<line class="st1" x1="11.1" y1="34.5" x2="35.7" y2="34.5"/>
-	<path id="File_Outline" class="st1" d="M32.3,1H8.3c-1,0-1.8,0.8-1.8,1.8v38.4c0,1,0.8,1.8,1.8,1.8h30.2c1,0,1.8-0.8,1.8-1.8V10.5
+	<path id="File_Outline" class="st1" d="M32.3,1h-24c-1,0-1.8,0.8-1.8,1.8v38.4c0,1,0.8,1.8,1.8,1.8h30.2c1,0,1.8-0.8,1.8-1.8V10.5
 		L32.3,1z"/>
 	<line class="st1" x1="11.1" y1="9.4" x2="31.5" y2="9.4"/>
 	<line class="st1" x1="11.1" y1="15.7" x2="35.7" y2="15.7"/>
