@@ -25,6 +25,10 @@
   border-bottom: 0.75px solid var(--gray);
 }
 
+.note-title {
+  font-weight: bold;
+}
+
 .note-title-preview {
   font-weight: bold;
   margin-bottom: 0;
