@@ -5,6 +5,7 @@ import SourcesWinBoxContent from "./SourcesWinBoxContent";
 import TerminalWinBoxContent from "./TerminalWinBoxContent/TerminalWinBoxContent";
 import CommunicationPartnersWinBoxContent from "./CommunicationPartnersWinBoxContent/CommunicationPartnersWinBoxContent";
 import TranslateWinBoxContent from "./TranslateWinBoxContent/TranslateWinBoxContent";
+import InspectionWinBoxContent from "./InspectionWinBoxContent";
 import DialogueWinBoxContent from "./DialogueWinBoxContent/DialogueWinBoxContent";
 import InscriptionWinBoxContent from "./InscriptionWinBoxContent/InscriptionWinBoxContent";
 import InspirationWinBoxContent from "./InspirationWinBoxContent";
@@ -27,6 +28,7 @@ import {
   TERMINAL,
   COMMUNICATION_PARTNERS,
   TRANSLATION,
+  INSPECTION,
   DIALOGUE,
   INSCRIPTION,
   INSPIRATION,
@@ -130,6 +132,17 @@ function CustomWinBoxes(props) {
       headerColor: "#6daffe",
     },
     {
+      appName: INSPECTION,
+      innerRef: props.InspectionWinBoxRef,
+      width: 600,
+      height: 600,
+      x: 40,
+      y: 70,
+      children: <InspectionWinBoxContent />,
+      headerColor: "#e6e6e6",
+      headerFontColor: "dark",
+    },
+    {
       appName: DIALOGUE,
       innerRef: props.DialogueWinBoxRef,
       width: 400,
@@ -147,8 +160,7 @@ function CustomWinBoxes(props) {
       x: 80,
       y: 30,
       children: <InscriptionWinBoxContent />,
-      headerColor: "#f4cf34",
-      headerFontColor: "dark",
+      headerColor: "#317873",
     },
     {
       appName: INSPIRATION,

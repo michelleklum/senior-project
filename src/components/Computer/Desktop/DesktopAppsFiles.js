@@ -7,6 +7,7 @@ import {
   TERMINAL,
   COMMUNICATION_PARTNERS,
   TRANSLATION,
+  INSPECTION,
   DIALOGUE,
   INSCRIPTION,
   INSPIRATION,
@@ -17,6 +18,7 @@ import trash from "../icons/Trash-47x44.svg";
 import folder from "../icons/Folder-47x44.svg";
 import terminal from "../icons/Terminal-47x44.svg";
 import translate from "../icons/Translate-47x44.svg";
+import magnifyingGlass from "../icons/MagnifyingGlass-47x44.svg";
 import chat from "../icons/Chat-47x44.svg";
 import memo from "../icons/Memo-47x44.svg";
 
@@ -26,6 +28,7 @@ export const DESKTOP_APPS_FILES = [
   [COMMUNICATION_PARTNERS, folder],
   [TRANSLATION, translate],
   [DIALOGUE, chat],
+  [INSPECTION, magnifyingGlass],
   [INSCRIPTION, memo],
   [TRASH, trash],
   [SOURCES, folder],

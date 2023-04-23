@@ -1,0 +1,17 @@
+/* No scrollbars even as image gets bigger and can't be completely displayed in the WinBox. */
+#inspection-winbox-content {
+  overflow: hidden;
+}
+
+/* Superimpose magnifying glass icon on top of image. */
+#inspection-img {
+  position: relative;
+}
+
+#magnifying-glass {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+
+  color: white;
+}

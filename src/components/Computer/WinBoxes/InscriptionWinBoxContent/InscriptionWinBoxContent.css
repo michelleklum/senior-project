@@ -36,7 +36,7 @@
 }
 
 #selected-note {
-  background-color: var(--light-gray);
+  background-color: var(--light-green);
   border-radius: 5px;
   border: none;
 }
