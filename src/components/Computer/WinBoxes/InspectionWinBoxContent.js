@@ -1,6 +1,5 @@
-import "./InspectionWinBoxContent.css";
-
 import React, { useState } from "react";
+import "./InspectionWinBoxContent.css";
 
 function InspectionWinBoxContent() {
   const [zoom, setZoom] = useState(100);

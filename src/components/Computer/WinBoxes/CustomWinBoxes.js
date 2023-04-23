@@ -125,7 +125,7 @@ function CustomWinBoxes(props) {
       innerRef: props.TranslateWinBoxRef,
       icon: translate,
       width: 700,
-      height: 550,
+      height: 500,
       x: 120,
       y: 42,
       children: <TranslateWinBoxContent />,

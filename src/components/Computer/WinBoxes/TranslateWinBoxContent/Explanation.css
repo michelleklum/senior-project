@@ -1,0 +1,48 @@
+#explanation-header {
+  text-align: center;
+}
+
+.explanation-slide {
+  display: flex;
+  gap: 1rem;
+
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.explanation-slide button {
+  /* Give each button a fixed width. */
+  flex-basis: 1.75rem;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
+.explanation-slide button:hover {
+  background-color: var(--light-gray);
+  cursor: pointer;
+}
+
+.explanation-slide-button-left:hover {
+  box-shadow: rgb(0 0 0 / 30%) -5px 5px 0px 0px;
+}
+
+.explanation-slide-button-right:hover {
+  box-shadow: rgb(0 0 0 / 30%) 5px 5px 0px 0px;
+}
+
+.explanation-text-group {
+  padding: 0 1rem;
+  border-radius: 10px;
+  background-color: var(--light-blue);
+}
+
+.explanation-title {
+  font-weight: bold;
+}
+
+.explanation-text {
+  white-space: pre-wrap; /* Allows use of \n for line breaks, as well as spaces. */
+}
