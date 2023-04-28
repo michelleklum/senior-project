@@ -177,7 +177,7 @@ function CustomWinBoxes(props) {
       appName: ACKNOWLEDGMENTS,
       innerRef: props.AcknowledgmentsWinBoxRef,
       width: 620,
-      height: 640,
+      height: 688,
       x: 600,
       y: 10,
       children: <AcknowledgmentsWinBoxContent />,

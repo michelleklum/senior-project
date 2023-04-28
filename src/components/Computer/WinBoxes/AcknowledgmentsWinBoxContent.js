@@ -43,10 +43,13 @@ function AcknowledgmentsWinBoxContent() {
         skills required to complete this project.
       </p>
       <p>
-        And much appreciation goes to Lucas Bang for his interest in each and
-        every one of my adventures in Media Studies these past two years, as
-        well as Avani Anne, Shivani Manivasagan, and my other Muddraker kids for
-        all your love and support.
+        Much appreciation goes to Lucas Bang for his interest in each and every
+        one of my adventures in Media Studies these past two years, as well as
+        Avani Anne, Shivani Manivasagan, and my other Muddraker kids for all
+        your love and support. And to my Darkroom Photo classmates, for sharing
+        in this complicated relationship we all have with art, and of course,
+        our wonderful professor Kurt Simonson for being the most encouraging art
+        teacher possible.
       </p>
       <p>
         Finally, thank you to all my other friends and family who felt,
