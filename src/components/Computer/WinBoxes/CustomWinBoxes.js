@@ -83,7 +83,7 @@ function CustomWinBoxes(props) {
       innerRef: props.SourcesWinBoxRef,
       width: 470,
       height: 330,
-      x: 800,
+      x: 950,
       y: 145,
       children: <SourcesWinBoxContent />,
       headerColor: "#e6e6e6",
@@ -285,7 +285,7 @@ function CustomWinBoxes(props) {
     {
       appName: COMMAND_LINE_INTERFACE,
       innerRef: props.CommandLineInterfaceWinBoxRef,
-      width: 510,
+      width: 630,
       height: 480,
       x: 920,
       y: 150,
