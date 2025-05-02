@@ -1,3 +1,5 @@
+This was a website I developed for my Media Studies senior thesis at the Claremont Colleges in Spring 2023.
+
 Published at https://michelleklum.github.io/senior-project/
 
 # Getting Started with Create React App
